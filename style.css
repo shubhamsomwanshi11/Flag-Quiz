@@ -1,0 +1,39 @@
+.gamecard {
+    height: 100%;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff33;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    transition: 250ms;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.gamecard .button {
+    border: none;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 800;
+    cursor: pointer;
+    transform: perspective(1px) translateZ(0px);
+    transition-duration: 0.2s;
+}
+
+.gamecard:hover {
+    transform: translate3d(0, -5px, 0) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.svgicon {
+    width: 30px;
+    height: 30px;
+}
+
+.glowing-text {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7),
+                 0 0 20px rgba(0, 255, 0, 0.5),
+                 0 0 30px rgba(0, 255, 0, 0.3);
+}
