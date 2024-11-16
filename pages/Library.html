@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Flag Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/Library.js"></script>
+</head>
+
+<body>
+    <section class="section has-background-link">
+        <div class="container">
+            <h1 class="title has-text-centered has-text-light">Country Flag Quiz</h1>
+            <div class="container">
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+                            <figure class="image is-128x128" style="margin: auto;">
+                                <img src="../assets/Book.png" alt="Placeholder image" />
+                            </figure>
+                            <p class="is-size-4 has-text-weight-bold">
+                                Library
+                            </p>
+                        </div>
+                        <div class="column is-flex is-justify-content-end is-align-items-center">
+                            <div class="buttons">
+                                <a class="button quizbtn is-rounded is-warning has-text-light has-text-weight-bold">Flag
+                                    Quiz <svg width="30" height="30" class="svgicon ml-1">
+                                        <use href="#playIC" />
+                                    </svg></a>
+                                <a class="button quizbtn is-rounded is-warning has-text-light has-text-weight-bold">Country
+                                    Quiz
+                                    <svg width="30" height="30" class="svgicon ml-1">
+                                        <use href="#playIC" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-flex is-justify-content-space-between">
+                        <p class="is-size-5">Explore about world flags, first learn, and then test
+                            your knowledge through quiz.</p>
+
+                        <div class="is-flex is-align-items-center">
+                            <p class="has-text-weight-semibold mr-1">Continet: </p>
+                            <div class="select is-success">
+                                <select class=" has-text-weight-semibold" id="continet">
+                                    <option value="All">All</option>
+                                    <option value="Africa">Africa</option>
+                                    <option value="Asia">Asia</option>
+                                    <option value="Europe">Europe</option>
+                                    <option value="North America">North America</option>
+                                    <option value="South America">South America</option>
+                                    <option value="Oceania">Oceania</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr />
+
+                    <!-- Showing Flag Images -->
+
+                    <div class="columns is-multiline" id="flagsContainer">
+                        <div class="column is-3">
+                            <div class="card has-background-link-light">
+                                <div class="card-content">
+                                    <a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank" rel="noopener"
+                                        title="Click to view detailed info about Afghanistan">
+                                        <figure class="image" style="margin: auto;">
+                                            <img class="flagimg" src="../assets/Flag Images/Afghanistan.png"
+                                                alt="Afghanistan Flag Image" />
+                                        </figure>
+                                        <p
+                                            class="is-size-5 has-text-black mt-2 has-text-centered has-text-weight-semibold">
+                                            Afghanistan
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="display: none;">
+        <svg id="playIC" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF">
+            <path
+                d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+        </svg>
+    </div>
+</body>
+
+</html>

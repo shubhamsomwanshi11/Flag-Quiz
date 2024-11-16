@@ -1,0 +1,954 @@
+{
+  "Africa": [
+    {
+      "name": "Algeria",
+      "link": "https://en.wikipedia.org/wiki/Algeria",
+      "img": "Algeria.svg"
+    },
+    {
+      "name": "Angola",
+      "link": "https://en.wikipedia.org/wiki/Angola",
+      "img": "Angola.svg"
+    },
+    {
+      "name": "Benin",
+      "link": "https://en.wikipedia.org/wiki/Benin",
+      "img": "Benin.svg"
+    },
+    {
+      "name": "Botswana",
+      "link": "https://en.wikipedia.org/wiki/Botswana",
+      "img": "Botswana.svg"
+    },
+    {
+      "name": "Burkina Faso",
+      "link": "https://en.wikipedia.org/wiki/Burkina_Faso",
+      "img": "Burkina Faso.png"
+    },
+    {
+      "name": "Burundi",
+      "link": "https://en.wikipedia.org/wiki/Burundi",
+      "img": "Burundi.svg"
+    },
+    {
+      "name": "Cabo Verde",
+      "link": "https://en.wikipedia.org/wiki/Cabo_Verde",
+      "img": "Cabo Verde.svg"
+    },
+    {
+      "name": "Cameroon",
+      "link": "https://en.wikipedia.org/wiki/Cameroon",
+      "img": "Cameroon.svg"
+    },
+    {
+      "name": "Central African Republic",
+      "link": "https://en.wikipedia.org/wiki/Central_African_Republic",
+      "img": "Central African Republic.png"
+    },
+    {
+      "name": "Chad",
+      "link": "https://en.wikipedia.org/wiki/Chad",
+      "img": "Chad.svg"
+    },
+    {
+      "name": "Comoros",
+      "link": "https://en.wikipedia.org/wiki/Comoros",
+      "img": "Congo (Congo-Kinshasa).svg"
+    },
+    {
+      "name": "Djibouti",
+      "link": "https://en.wikipedia.org/wiki/Djibouti",
+      "img": "Djibouti.svg"
+    },
+    {
+      "name": "Egypt",
+      "link": "https://en.wikipedia.org/wiki/Egypt",
+      "img": "Egypt.svg"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "link": "https://en.wikipedia.org/wiki/Equatorial_Guinea",
+      "img": "Equatorial_Guinea.png"
+    },
+    {
+      "name": "Eritrea",
+      "link": "https://en.wikipedia.org/wiki/Eritrea",
+      "img": "Eritrea.svg"
+    },
+    {
+      "name": "Eswatini",
+      "link": "https://en.wikipedia.org/wiki/Eswatini",
+      "img": "Eswatini.png"
+    },
+    {
+      "name": "Ethiopia",
+      "link": "https://en.wikipedia.org/wiki/Ethiopia",
+      "img": "Ethiopia.svg"
+    },
+    {
+      "name": "Gabon",
+      "link": "https://en.wikipedia.org/wiki/Gabon",
+      "img": "Gabon.png"
+    },
+    {
+      "name": "Gambia",
+      "link": "https://en.wikipedia.org/wiki/Gambia",
+      "img": "Gambia.png"
+    },
+    {
+      "name": "Ghana",
+      "link": "https://en.wikipedia.org/wiki/Ghana",
+      "img": "Ghana.svg"
+    },
+    {
+      "name": "Guinea",
+      "link": "https://en.wikipedia.org/wiki/Guinea",
+      "img": "Guinea.png"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "link": "https://en.wikipedia.org/wiki/Guinea-Bissau",
+      "img": "Guinea-Bissau.png"
+    },
+    {
+      "name": "Kenya",
+      "link": "https://en.wikipedia.org/wiki/Kenya",
+      "img": "Kenya.svg"
+    },
+    {
+      "name": "Lesotho",
+      "link": "https://en.wikipedia.org/wiki/Lesotho",
+      "img": "Lesotho.png"
+    },
+    {
+      "name": "Liberia",
+      "link": "https://en.wikipedia.org/wiki/Liberia",
+      "img": "Liberia.png"
+    },
+    {
+      "name": "Libya",
+      "link": "https://en.wikipedia.org/wiki/Libya",
+      "img": "Libya.png"
+    },
+    {
+      "name": "Madagascar",
+      "link": "https://en.wikipedia.org/wiki/Madagascar",
+      "img": "Madagascar.png"
+    },
+    {
+      "name": "Malawi",
+      "link": "https://en.wikipedia.org/wiki/Malawi",
+      "img": "Malawi.png"
+    },
+    {
+      "name": "Mali",
+      "link": "https://en.wikipedia.org/wiki/Mali",
+      "img": "Mali.svg"
+    },
+    {
+      "name": "Mauritania",
+      "link": "https://en.wikipedia.org/wiki/Mauritania",
+      "img": "Mauritania.png"
+    },
+    {
+      "name": "Mauritius",
+      "link": "https://en.wikipedia.org/wiki/Mauritius",
+      "img": "Mauritius.svg"
+    },
+    {
+      "name": "Morocco",
+      "link": "https://en.wikipedia.org/wiki/Morocco",
+      "img": "Morocco.svg"
+    },
+    {
+      "name": "Mozambique",
+      "link": "https://en.wikipedia.org/wiki/Mozambique",
+      "img": "Mozambique.svg"
+    },
+    {
+      "name": "Namibia",
+      "link": "https://en.wikipedia.org/wiki/Namibia",
+      "img": "Namibia.svg"
+    },
+    {
+      "name": "Niger",
+      "link": "https://en.wikipedia.org/wiki/Niger",
+      "img": "Niger.svg"
+    },
+    {
+      "name": "Nigeria",
+      "link": "https://en.wikipedia.org/wiki/Nigeria",
+      "img": "Nigeria.png"
+    },
+    {
+      "name": "Rwanda",
+      "link": "https://en.wikipedia.org/wiki/Rwanda",
+      "img": "Rwanda.png"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "link": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
+      "img": "Sao Tome and Principe.png"
+    },
+    {
+      "name": "Senegal",
+      "link": "https://en.wikipedia.org/wiki/Senegal",
+      "img": "Senegal.png"
+    },
+    {
+      "name": "Seychelles",
+      "link": "https://en.wikipedia.org/wiki/Seychelles",
+      "img": "Seychelles.png"
+    },
+    {
+      "name": "Sierra Leone",
+      "link": "https://en.wikipedia.org/wiki/Sierra_Leone",
+      "img": "Sierra Leone.png"
+    },
+    {
+      "name": "Somalia",
+      "link": "https://en.wikipedia.org/wiki/Somalia",
+      "img": "Somalia.svg"
+    },
+    {
+      "name": "South Africa",
+      "link": "https://en.wikipedia.org/wiki/South_Africa",
+      "img": "South Africa.png"
+    },
+    {
+      "name": "South Sudan",
+      "link": "https://en.wikipedia.org/wiki/South_Sudan",
+      "img": "South Sudan.png"
+    },
+    {
+      "name": "Sudan",
+      "link": "https://en.wikipedia.org/wiki/Sudan",
+      "img": "Sudan.svg"
+    },
+    {
+      "name": "Tanzania",
+      "link": "https://en.wikipedia.org/wiki/Tanzania",
+      "img": "Tanzania.svg"
+    },
+    {
+      "name": "Togo",
+      "link": "https://en.wikipedia.org/wiki/Togo",
+      "img": "Togo.svg"
+    },
+    {
+      "name": "Tunisia",
+      "link": "https://en.wikipedia.org/wiki/Tunisia",
+      "img": "Tunisia.png"
+    },
+    {
+      "name": "Uganda",
+      "link": "https://en.wikipedia.org/wiki/Uganda",
+      "img": "Uganda.png"
+    },
+    {
+      "name": "Zambia",
+      "link": "https://en.wikipedia.org/wiki/Zambia",
+      "img": "Zambia.svg"
+    },
+    {
+      "name": "Zimbabwe",
+      "link": "https://en.wikipedia.org/wiki/Zimbabwe",
+      "img": "Zimbabwe.svg"
+    }
+  ],
+  "Asia": [
+    {
+      "name": "Afghanistan",
+      "link": "https://en.wikipedia.org/wiki/Afghanistan",
+      "img": "Afghanistan.png"
+    },
+    {
+      "name": "Armenia",
+      "link": "https://en.wikipedia.org/wiki/Armenia",
+      "img": "Armenia.svg"
+    },
+    {
+      "name": "Azerbaijan",
+      "link": "https://en.wikipedia.org/wiki/Azerbaijan",
+      "img": "Azerbaijan.svg"
+    },
+    {
+      "name": "Bahrain",
+      "link": "https://en.wikipedia.org/wiki/Bahrain",
+      "img": "Bahrain.svg"
+    },
+    {
+      "name": "Bangladesh",
+      "link": "https://en.wikipedia.org/wiki/Bangladesh",
+      "img": "Bangladesh.png"
+    },
+    {
+      "name": "Bhutan",
+      "link": "https://en.wikipedia.org/wiki/Bhutan",
+      "img": "Bhutan.svg"
+    },
+    {
+      "name": "Brunei",
+      "link": "https://en.wikipedia.org/wiki/Brunei",
+      "img": "Brunei.svg"
+    },
+    {
+      "name": "Cambodia",
+      "link": "https://en.wikipedia.org/wiki/Cambodia",
+      "img": "Cambodia.svg"
+    },
+    {
+      "name": "China",
+      "link": "https://en.wikipedia.org/wiki/China",
+      "img": "China.png"
+    },
+    {
+      "name": "Cyprus",
+      "link": "https://en.wikipedia.org/wiki/Cyprus",
+      "img": "Cyprus.svg"
+    },
+    {
+      "name": "Georgia",
+      "link": "https://en.wikipedia.org/wiki/Georgia_(country)",
+      "img": "Georgia.png"
+    },
+    {
+      "name": "India",
+      "link": "https://en.wikipedia.org/wiki/India",
+      "img": "India.png"
+    },
+    {
+      "name": "Indonesia",
+      "link": "https://en.wikipedia.org/wiki/Indonesia",
+      "img": "Indonesia.svg"
+    },
+    {
+      "name": "Iran",
+      "link": "https://en.wikipedia.org/wiki/Iran",
+      "img": "Iran.svg"
+    },
+    {
+      "name": "Iraq",
+      "link": "https://en.wikipedia.org/wiki/Iraq",
+      "img": "Iraq.svg"
+    },
+    {
+      "name": "Israel",
+      "link": "https://en.wikipedia.org/wiki/Israel",
+      "img": "Israel.svg"
+    },
+    {
+      "name": "Japan",
+      "link": "https://en.wikipedia.org/wiki/Japan",
+      "img": "Japan.svg"
+    },
+    {
+      "name": "Jordan",
+      "link": "https://en.wikipedia.org/wiki/Jordan",
+      "img": "Jordan.svg"
+    },
+    {
+      "name": "Kazakhstan",
+      "link": "https://en.wikipedia.org/wiki/Kazakhstan",
+      "img": "Kazakhstan.svg"
+    },
+    {
+      "name": "Kuwait",
+      "link": "https://en.wikipedia.org/wiki/Kuwait",
+      "img": "Kuwait.png"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "link": "https://en.wikipedia.org/wiki/Kyrgyzstan",
+      "img": "Kyrgyzstan.svg"
+    },
+    {
+      "name": "Laos",
+      "link": "https://en.wikipedia.org/wiki/Laos",
+      "img": "Laos.svg"
+    },
+    {
+      "name": "Lebanon",
+      "link": "https://en.wikipedia.org/wiki/Lebanon",
+      "img": "Lebanon.svg"
+    },
+    {
+      "name": "Malaysia",
+      "link": "https://en.wikipedia.org/wiki/Malaysia",
+      "img": "Malaysia.svg"
+    },
+    {
+      "name": "Maldives",
+      "link": "https://en.wikipedia.org/wiki/Maldives",
+      "img": "Maldives.png"
+    },
+    {
+      "name": "Mongolia",
+      "link": "https://en.wikipedia.org/wiki/Mongolia",
+      "img": "Mongolia.svg"
+    },
+    {
+      "name": "Myanmar",
+      "link": "https://en.wikipedia.org/wiki/Myanmar",
+      "img": "Myanmar.png"
+    },
+    {
+      "name": "Nepal",
+      "link": "https://en.wikipedia.org/wiki/Nepal",
+      "img": "Nepal.svg"
+    },
+    {
+      "name": "Oman",
+      "link": "https://en.wikipedia.org/wiki/Oman",
+      "img": "Oman.svg"
+    },
+    {
+      "name": "Pakistan",
+      "link": "https://en.wikipedia.org/wiki/Pakistan",
+      "img": "Pakistan.svg"
+    },
+    {
+      "name": "Philippines",
+      "link": "https://en.wikipedia.org/wiki/Philippines",
+      "img": "Philippines.svg"
+    },
+    {
+      "name": "Qatar",
+      "link": "https://en.wikipedia.org/wiki/Qatar",
+      "img": "Qatar.svg"
+    },
+    {
+      "name": "Saudi Arabia",
+      "link": "https://en.wikipedia.org/wiki/Saudi_Arabia",
+      "img": "Saudi Arabia.png"
+    },
+    {
+      "name": "Singapore",
+      "link": "https://en.wikipedia.org/wiki/Singapore",
+      "img": "Singapore.svg"
+    },
+    {
+      "name": "Sri Lanka",
+      "link": "https://en.wikipedia.org/wiki/Sri_Lanka",
+      "img": "Sri Lanka.svg"
+    },
+    {
+      "name": "Syria",
+      "link": "https://en.wikipedia.org/wiki/Syria",
+      "img": "Syria.svg"
+    },
+    {
+      "name": "Taiwan",
+      "link": "https://en.wikipedia.org/wiki/Taiwan",
+      "img": "Taiwan.png"
+    },
+    {
+      "name": "Tajikistan",
+      "link": "https://en.wikipedia.org/wiki/Tajikistan",
+      "img": "Tajikistan.png"
+    },
+    {
+      "name": "Thailand",
+      "link": "https://en.wikipedia.org/wiki/Thailand",
+      "img": "Thailand.svg"
+    },
+    {
+      "name": "Turkey",
+      "link": "https://en.wikipedia.org/wiki/Turkey",
+      "img": "Turkey.svg"
+    },
+    {
+      "name": "Turkmenistan",
+      "link": "https://en.wikipedia.org/wiki/Turkmenistan",
+      "img": "Turkmenis.png"
+    },
+    {
+      "name": "United Arab Emirates",
+      "link": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+      "img": "United Arab Emirates.png"
+    },
+    {
+      "name": "Uzbekistan",
+      "link": "https://en.wikipedia.org/wiki/Uzbekistan",
+      "img": "Uzbekistan.svg"
+    },
+    {
+      "name": "Vietnam",
+      "link": "https://en.wikipedia.org/wiki/Vietnam",
+      "img": "Vietnam.svg"
+    },
+    {
+      "name": "Yemen",
+      "link": "https://en.wikipedia.org/wiki/Yemen",
+      "img": "Yemen.png"
+    }
+  ],
+  "Europe": [
+    {
+      "name": "Albania",
+      "link": "https://en.wikipedia.org/wiki/Albania",
+      "img": "Albania.svg"
+    },
+    {
+      "name": "Andorra",
+      "link": "https://en.wikipedia.org/wiki/Andorra",
+      "img": "Andorra.png"
+    },
+    {
+      "name": "Austria",
+      "link": "https://en.wikipedia.org/wiki/Austria",
+      "img": "Austria.svg"
+    },
+    {
+      "name": "Belarus",
+      "link": "https://en.wikipedia.org/wiki/Belarus",
+      "img": "Belarus.svg"
+    },
+    {
+      "name": "Belgium",
+      "link": "https://en.wikipedia.org/wiki/Belgium",
+      "img": "Belgium.svg"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "link": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina",
+      "img": "Bosnia and Herzegovina.png"
+    },
+    {
+      "name": "Bulgaria",
+      "link": "https://en.wikipedia.org/wiki/Bulgaria",
+      "img": "Bulgaria.png"
+    },
+    {
+      "name": "Croatia",
+      "link": "https://en.wikipedia.org/wiki/Croatia",
+      "img": "Croatia.svg"
+    },
+    {
+      "name": "Denmark",
+      "link": "https://en.wikipedia.org/wiki/Denmark",
+      "img": "Denmark.svg"
+    },
+    {
+      "name": "Estonia",
+      "link": "https://en.wikipedia.org/wiki/Estonia",
+      "img": "Estonia.png"
+    },
+    {
+      "name": "Finland",
+      "link": "https://en.wikipedia.org/wiki/Finland",
+      "img": "Finland.svg"
+    },
+    {
+      "name": "France",
+      "link": "https://en.wikipedia.org/wiki/France",
+      "img": "France.svg"
+    },
+    {
+      "name": "Germany",
+      "link": "https://en.wikipedia.org/wiki/Germany",
+      "img": "Germany.svg"
+    },
+    {
+      "name": "Greece",
+      "link": "https://en.wikipedia.org/wiki/Greece",
+      "img": "Greece.svg"
+    },
+    {
+      "name": "Hungary",
+      "link": "https://en.wikipedia.org/wiki/Hungary",
+      "img": "Hungary.svg"
+    },
+    {
+      "name": "Iceland",
+      "link": "https://en.wikipedia.org/wiki/Iceland",
+      "img": "Iceland.png"
+    },
+    {
+      "name": "Ireland",
+      "link": "https://en.wikipedia.org/wiki/Ireland",
+      "img": "Ireland.svg"
+    },
+    {
+      "name": "Italy",
+      "link": "https://en.wikipedia.org/wiki/Italy",
+      "img": "Italy.svg"
+    },
+    {
+      "name": "Latvia",
+      "link": "https://en.wikipedia.org/wiki/Latvia",
+      "img": "Latvia.svg"
+    },
+    {
+      "name": "Liechtenstein",
+      "link": "https://en.wikipedia.org/wiki/Liechtenstein",
+      "img": "Liechtenstein.svg"
+    },
+    {
+      "name": "Lithuania",
+      "link": "https://en.wikipedia.org/wiki/Lithuania",
+      "img": "Lithuania.svg"
+    },
+    {
+      "name": "Luxembourg",
+      "link": "https://en.wikipedia.org/wiki/Luxembourg",
+      "img": "Luxembourg.png"
+    },
+    {
+      "name": "Malta",
+      "link": "https://en.wikipedia.org/wiki/Malta",
+      "img": "Malta.svg"
+    },
+    {
+      "name": "Moldova",
+      "link": "https://en.wikipedia.org/wiki/Moldova",
+      "img": "Moldova.svg"
+    },
+    {
+      "name": "Monaco",
+      "link": "https://en.wikipedia.org/wiki/Monaco",
+      "img": "Monaco.png"
+    },
+    {
+      "name": "Montenegro",
+      "link": "https://en.wikipedia.org/wiki/Montenegro",
+      "img": "Montenegro.png"
+    },
+    {
+      "name": "Netherlands",
+      "link": "https://en.wikipedia.org/wiki/Netherlands",
+      "img": "Netherlands.svg"
+    },
+    {
+      "name": "North Macedonia",
+      "link": "https://en.wikipedia.org/wiki/North_Macedonia",
+      "img": "North Macedonia.png"
+    },
+    {
+      "name": "Norway",
+      "link": "https://en.wikipedia.org/wiki/Norway",
+      "img": "Norway.svg"
+    },
+    {
+      "name": "Poland",
+      "link": "https://en.wikipedia.org/wiki/Poland",
+      "img": "Poland.svg"
+    },
+    {
+      "name": "Portugal",
+      "link": "https://en.wikipedia.org/wiki/Portugal",
+      "img": "Portugal.png"
+    },
+    {
+      "name": "Romania",
+      "link": "https://en.wikipedia.org/wiki/Romania",
+      "img": "Romania.svg"
+    },
+    {
+      "name": "Russia",
+      "link": "https://en.wikipedia.org/wiki/Russia",
+      "img": "Russia.svg"
+    },
+    {
+      "name": "San Marino",
+      "link": "https://en.wikipedia.org/wiki/San_Marino",
+      "img": "San Marino.png"
+    },
+    {
+      "name": "Serbia",
+      "link": "https://en.wikipedia.org/wiki/Serbia",
+      "img": "Serbia.png"
+    },
+    {
+      "name": "Slovakia",
+      "link": "https://en.wikipedia.org/wiki/Slovakia",
+      "img": "Slovakia.svg"
+    },
+    {
+      "name": "Slovenia",
+      "link": "https://en.wikipedia.org/wiki/Slovenia",
+      "img": "Slovenia.svg"
+    },
+    {
+      "name": "Spain",
+      "link": "https://en.wikipedia.org/wiki/Spain",
+      "img": "Spain.svg"
+    },
+    {
+      "name": "Sweden",
+      "link": "https://en.wikipedia.org/wiki/Sweden",
+      "img": "Sweden.svg"
+    },
+    {
+      "name": "Switzerland",
+      "link": "https://en.wikipedia.org/wiki/Switzerland",
+      "img": "Switzerland.png"
+    },
+    {
+      "name": "Ukraine",
+      "link": "https://en.wikipedia.org/wiki/Ukraine",
+      "img": "Ukraine.svg"
+    },
+    {
+      "name": "United Kingdom",
+      "link": "https://en.wikipedia.org/wiki/United_Kingdom",
+      "img": "United Kingdom.png"
+    },
+    {
+      "name": "Vatican City",
+      "link": "https://en.wikipedia.org/wiki/Vatican_City",
+      "img": "Vatican City.png"
+    }
+  ],
+  "North America": [
+    {
+      "name": "Antigua and Barbuda",
+      "link": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda",
+      "img": "Antigua and Barbuda.png"
+    },
+    {
+      "name": "Bahamas",
+      "link": "https://en.wikipedia.org/wiki/Bahamas",
+      "img": "Bahamas.svg"
+    },
+    {
+      "name": "Barbados",
+      "link": "https://en.wikipedia.org/wiki/Barbados",
+      "img": "Barbados.svg"
+    },
+    {
+      "name": "Belize",
+      "link": "https://en.wikipedia.org/wiki/Belize",
+      "img": "Belize.svg"
+    },
+    {
+      "name": "Canada",
+      "link": "https://en.wikipedia.org/wiki/Canada",
+      "img": "Canada.svg"
+    },
+    {
+      "name": "Costa Rica",
+      "link": "https://en.wikipedia.org/wiki/Costa_Rica",
+      "img": "Costa Rica.png"
+    },
+    {
+      "name": "Cuba",
+      "link": "https://en.wikipedia.org/wiki/Cuba",
+      "img": "Cuba.png"
+    },
+    {
+      "name": "Dominica",
+      "link": "https://en.wikipedia.org/wiki/Dominica",
+      "img": "Dominica.png"
+    },
+    {
+      "name": "Dominican Republic",
+      "link": "https://en.wikipedia.org/wiki/Dominican_Republic",
+      "img": "Dominican Republic.png"
+    },
+    {
+      "name": "El Salvador",
+      "link": "https://en.wikipedia.org/wiki/El_Salvador",
+      "img": "El_Salvador.png"
+    },
+    {
+      "name": "Grenada",
+      "link": "https://en.wikipedia.org/wiki/Grenada",
+      "img": "Grenada.png"
+    },
+    {
+      "name": "Guatemala",
+      "link": "https://en.wikipedia.org/wiki/Guatemala",
+      "img": "Guatemala.png"
+    },
+    {
+      "name": "Haiti",
+      "link": "https://en.wikipedia.org/wiki/Haiti",
+      "img": "Haiti.svg"
+    },
+    {
+      "name": "Honduras",
+      "link": "https://en.wikipedia.org/wiki/Honduras",
+      "img": "Honduras.png"
+    },
+    {
+      "name": "Jamaica",
+      "link": "https://en.wikipedia.org/wiki/Jamaica",
+      "img": "Jamaica.svg"
+    },
+    {
+      "name": "Mexico",
+      "link": "https://en.wikipedia.org/wiki/Mexico",
+      "img": "Mexico.png"
+    },
+    {
+      "name": "Nicaragua",
+      "link": "https://en.wikipedia.org/wiki/Nicaragua",
+      "img": "Nicaragua.png"
+    },
+    {
+      "name": "Panama",
+      "link": "https://en.wikipedia.org/wiki/Panama",
+      "img": "Panama.png"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "link": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis",
+      "img": "Saint Kitts and Nevis.png"
+    },
+    {
+      "name": "Saint Lucia",
+      "link": "https://en.wikipedia.org/wiki/Saint_Lucia",
+      "img": "Saint Lucia.png"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "link": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines",
+      "img": "Saint Vincent and the Grenadines.png"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "link": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago",
+      "img": "Trinidad and Tobago.svg"
+    },
+    {
+      "name": "United States",
+      "link": "https://en.wikipedia.org/wiki/United_States",
+      "img": "United States.svg"
+    }
+  ],
+  "South America": [
+    {
+      "name": "Argentina",
+      "link": "https://en.wikipedia.org/wiki/Argentina",
+      "img": "Argentina.svg"
+    },
+    {
+      "name": "Bolivia",
+      "link": "https://en.wikipedia.org/wiki/Bolivia",
+      "img": "Bolivia.svg"
+    },
+    {
+      "name": "Brazil",
+      "link": "https://en.wikipedia.org/wiki/Brazil",
+      "img": "Brazil.svg"
+    },
+    {
+      "name": "Chile",
+      "link": "https://en.wikipedia.org/wiki/Chile",
+      "img": "Chile.svg"
+    },
+    {
+      "name": "Colombia",
+      "link": "https://en.wikipedia.org/wiki/Colombia",
+      "img": "Colombia.svg"
+    },
+    {
+      "name": "Ecuador",
+      "link": "https://en.wikipedia.org/wiki/Ecuador",
+      "img": "Ecuador.svg"
+    },
+    {
+      "name": "Guyana",
+      "link": "https://en.wikipedia.org/wiki/Guyana",
+      "img": "Guyana.svg"
+    },
+    {
+      "name": "Paraguay",
+      "link": "https://en.wikipedia.org/wiki/Paraguay",
+      "img": "Paraguay.svg"
+    },
+    {
+      "name": "Peru",
+      "link": "https://en.wikipedia.org/wiki/Peru",
+      "img": "Peru.svg"
+    },
+    {
+      "name": "Suriname",
+      "link": "https://en.wikipedia.org/wiki/Suriname",
+      "img": "Suriname.svg"
+    },
+    {
+      "name": "Uruguay",
+      "link": "https://en.wikipedia.org/wiki/Uruguay",
+      "img": "Uruguay.png"
+    },
+    {
+      "name": "Venezuela",
+      "link": "https://en.wikipedia.org/wiki/Venezuela",
+      "img": "Venezuela.svg"
+    }
+  ],
+  "Oceania": [
+    {
+      "name": "Australia",
+      "link": "https://en.wikipedia.org/wiki/Australia",
+      "img": "Australia.svg"
+    },
+    {
+      "name": "Fiji",
+      "link": "https://en.wikipedia.org/wiki/Fiji",
+      "img": "Fiji.png"
+    },
+    {
+      "name": "Kiribati",
+      "link": "https://en.wikipedia.org/wiki/Kiribati",
+      "img": "Kiribati.png"
+    },
+    {
+      "name": "Marshall Islands",
+      "link": "https://en.wikipedia.org/wiki/Marshall_Islands",
+      "img": "Marshall.png"
+    },
+    {
+      "name": "Micronesia",
+      "link": "https://en.wikipedia.org/wiki/Micronesia",
+      "img": "Micronesia.png"
+    },
+    {
+      "name": "Nauru",
+      "link": "https://en.wikipedia.org/wiki/Nauru",
+      "img": "Nauru.svg"
+    },
+    {
+      "name": "New Zealand",
+      "link": "https://en.wikipedia.org/wiki/New_Zealand",
+      "img": "New Zealand.png"
+    },
+    {
+      "name": "Palau",
+      "link": "https://en.wikipedia.org/wiki/Palau",
+      "img": "Palau.svg"
+    },
+    {
+      "name": "Papua New Guinea",
+      "link": "https://en.wikipedia.org/wiki/Papua_New_Guinea",
+      "img": "Papua New Guinea.png"
+    },
+    {
+      "name": "Samoa",
+      "link": "https://en.wikipedia.org/wiki/Samoa",
+      "img": "Samoa.png"
+    },
+    {
+      "name": "Solomon Islands",
+      "link": "https://en.wikipedia.org/wiki/Solomon_Islands",
+      "img": "Solomon Islands.png"
+    },
+    {
+      "name": "Tonga",
+      "link": "https://en.wikipedia.org/wiki/Tonga",
+      "img": "Tonga.svg"
+    },
+    {
+      "name": "Tuvalu",
+      "link": "https://en.wikipedia.org/wiki/Tuvalu",
+      "img": "Tuvalu.png"
+    },
+    {
+      "name": "Vanuatu",
+      "link": "https://en.wikipedia.org/wiki/Vanuatu",
+      "img": "Vanuatu.png"
+    }
+  ]
+}
