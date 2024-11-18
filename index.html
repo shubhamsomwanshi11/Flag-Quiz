@@ -7,22 +7,54 @@
     <title>Country Flag Quiz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
-    <section class="section">
-        <h1 class="title has-text-centered">Country Flag Quiz</h1>
-        <div class="contianer">
+    <nav class="navbar py-2 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <h1 class="has-text-centered title">Country Flag Quiz</h1>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start mt-2 has-text-weight-bold">
+                <a href="/" class="navbar-item  customelem active">
+                    Home
+                </a>
+
+                <a href="/pages/FlagQuiz.html" class="navbar-item customelem">
+                    Flag Quiz
+                </a>
+                <a href="/pages/CountryQuiz.html" class="navbar-item customelem">
+                    Country Quiz
+                </a>
+                <a href="/pages/Library.html" class="navbar-item customelem">
+                    Library
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="section has-background-link-light">
+        <div class="contianer mt-5">
             <!-- Main Box -->
             <div class="is-flex is-justify-content-center is-align-items-center">
-                <div class="box mainbox has-background-link">
+                <div class="box mt-5 mainbox has-background-link">
                     <div class="columns is-multiline">
                         <div class="column is-6">
                             <div class="card gamecard has-text-centered">
                                 <div class="card-content">
                                     <figure class="image is-128x128" style="margin: auto;">
-                                        <img src="https://static.vecteezy.com/system/resources/thumbnails/027/765/346/small_2x/quiz-sign-mark-free-free-png.png"
-                                            alt="Placeholder image" />
+                                        <img src="./assets/quiz.png" alt="Placeholder image" />
                                     </figure>
                                     <p class="is-size-4 has-text-light has-text-weight-bold">
                                         Select The Flag
@@ -42,8 +74,7 @@
                             <div class="card gamecard has-text-centered">
                                 <div class="card-content">
                                     <figure class="image is-128x128" style="margin: auto;">
-                                        <img src="https://static.vecteezy.com/system/resources/thumbnails/027/765/346/small_2x/quiz-sign-mark-free-free-png.png"
-                                            alt="Placeholder image" />
+                                        <img src="./assets/quiz.png" alt="Placeholder image" />
                                     </figure>
                                     <p class="is-size-4 has-text-light has-text-weight-bold">
                                         Name The Country
@@ -86,14 +117,11 @@
                         <div class="column is-6">
                             <div class="card gamecard has-text-centered">
                                 <figure class="image is-128x128" style="margin: auto;">
-                                    <img src="https://png.pngtree.com/png-vector/20230325/ourmid/pngtree-3-star-vector-clipart-png-image_6665412.png"
-                                        alt="Placeholder image" />
+                                    <img src="./assets/start.png" alt="Placeholder image" />
                                 </figure>
 
-                                <h2 class="is-size-2 has-text-weight-bold has-text-light glowing-text">
-                                    56.00
-                                </h2>
-
+                                <h2 class="is-size-1 has-text-centered has-text-weight-bold  glowing-text"
+                                    style="margin-top: -40px;" id="highestScore">0.00</h2>
                                 <div class="card-content">
                                     <p class="is-size-4 has-text-light has-text-weight-bold">
                                         Highest Score
@@ -106,17 +134,47 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="has-text-right">
-                        <button class="button is-ghost">
-                            <svg class="svgicon">
-                                <use href="#fullscreenIC"></use>
-                            </svg>
-                        </button>
-                    </div> -->
                 </div>
             </div>
         </div>
     </section>
+    <footer class="footer pt-2 pb-2 has-background-link-light">
+        <hr />
+        <div class="content">
+            <h1 class="has-text-centered">Country Flag Quiz</h1>
+
+            <h2>Why play this game?</h2>
+            <p class="is-size-5">
+                The Country Flag Quiz helps improve your geographical knowledge, enhances
+                memory retention, and is a fun way to learn about different countries and cultures. It's perfect for
+                students, trivia enthusiasts, and anyone who loves exploring the world!
+            </p>
+            <h2>Advantages:</h2>
+            <p>
+            <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                <li class="is-size-5">Interactive and educational.</li>
+                <li class="is-size-5">Engages users in a fun learning experience.</li>
+                <li class="is-size-5">Helps in recognizing and memorizing flags of various countries.</li>
+                <li class="is-size-5">Encourages competitive learning with friends and family.</li>
+            </ul>
+            </p>
+
+            <div class="has-text-right is-size-5">
+                <a class="mx-2" href="/">
+                    Home
+                </a>
+                <a class="mx-2" href="/pages/FlagQuiz.html">
+                    Flag Quiz
+                </a>
+                <a class="mx-2" href="/pages/CountryQuiz.html">
+                    Country Quiz
+                </a>
+                <a class="mx-2" href="/pages/Library.html">
+                    Library
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- SVG's -->
@@ -137,6 +195,11 @@
             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
         </svg>
     </div>
+
+    <script>
+        let highestScore = localStorage.getItem("flagScore") || 0;
+        document.getElementById('highestScore').innerHTML = highestScore;
+    </script>
 </body>
 
 </html>

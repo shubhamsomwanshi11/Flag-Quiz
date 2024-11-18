@@ -10,32 +10,64 @@
 </head>
 
 <body>
-    <section class="section">
-        <h1 class="title has-text-centered">Country Flag Quiz</h1>
-        <div class="container pb-5">
-            <div class="box has-background-primary-light">
-                <h2 class="has-text-centered is-size-4 has-text-weight-semibold">Name the Flag</h2>
-                <p class="has-text-centered">
-                    Flag image will be displayed along with four answer choices.
-                    Select the correct option to test your knowledge!
+    <nav class="navbar py-2 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <h1 class="has-text-centered title">Country Flag Quiz</h1>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start mt-2 has-text-weight-bold">
+                <a href="/" class="navbar-item  customelem">
+                    Home
+                </a>
+
+                <a href="/pages/FlagQuiz.html" class="navbar-item customelem">
+                    Flag Quiz
+                </a>
+                <a href="/pages/CountryQuiz.html" class="navbar-item customelem active">
+                    Country Quiz
+                </a>
+                <a href="/pages/Library.html" class="navbar-item customelem">
+                    Library
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="section mt-5 has-background-link-light is is-flex is-align-items-center">
+        <div class="container pb-5 mt-5 mb-5">
+            <div class="box has-background-link">
+                <h2 class="has-text-centered is-size-3 has-text-weight-bold has-text-light">Name the Country</h2>
+                <p class="has-text-centered has-text-light is-size-5">
+                    A flag image will be displayed along with four answer choices. Select the correct option to test
+                    your knowledge!
                 </p>
                 <hr />
 
                 <div id="startArea">
                     <div class="has-text-centered">
                         <figure class="image is-128x128" style="margin: auto;">
-                            <img src="https://png.pngtree.com/png-vector/20230325/ourmid/pngtree-3-star-vector-clipart-png-image_6665412.png"
+                            <img src="../assets/start.png"
                                 alt="Placeholder image">
                         </figure>
-                        <h2 class="is-size-2 has-text-centered has-text-weight-bold has-text-light glowing-text"
-                            style="margin-top: -40px;" id="highestScore">56.00</h2>
-                        <p class="is-size-4 has-text-centered has-text-light has-text-weight-bold">
+                        <h2 class="is-size-1 has-text-centered has-text-weight-bold  glowing-text"
+                            style="margin-top: -40px;" id="highestScore">0.00</h2>
+                        <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
                             Highest Score
                         </p>
                     </div>
 
                     <div class="has-text-right is-flex is-justify-content-center mt-3">
-                        <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold">Select Continent: </p>
+                        <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Select Continent: </p>
                         <div class="select is-success is-rounded">
                             <select class="has-text-weight-semibold" id="continent">
                                 <option value="All">All</option>
@@ -50,7 +82,7 @@
                     </div>
 
                     <div class="has-text-centered mt-3">
-                        <label class="checkbox has-text-weight-semibold is-size-5">
+                        <label class="checkbox has-text-light has-text-weight-semibold is-size-5">
                             <input type="checkbox" id="timedQuiz" checked>
                             Timed Quiz
                         </label>
@@ -58,13 +90,15 @@
 
                     <div class="has-text-centered mt-5">
                         <button id="playNowBtn" class="button quizbtn is-rounded is-large is-warning has-text-light">
-                            Play Now
+                            Play Now <svg class="svgicon ml-2 mt-1">
+                                <use href="#playIC" />
+                            </svg>
                         </button>
                     </div>
                 </div>
 
                 <!-- Game Area -->
-                <div id="gameArea" class="box has-background-light" style="display: none;">
+                <div id="gameArea" class="box" style="display: none;">
                     <div class="is-flex is-justify-content-space-between is-align-items-center mb-5">
                         <p class="is-size-5 has-text-weight-semibold">
                             <span class="has-text-grey">Time Remaining:</span>
@@ -85,13 +119,13 @@
                     </div>
 
                     <div class="has-text-right is-flex is-justify-content-center">
-                            <button class="button mx-1 has-text-light has-text-weight-bold is-primary" id="nextBtn"
-                                style="display: none;">
-                                Next
-                            </button>
-                            <button class="button mx-1 has-text-light has-text-weight-bold is-danger" id="submitBtn">
-                                Submit
-                            </button>
+                        <button class="button mx-1 has-text-light has-text-weight-bold is-primary" id="nextBtn"
+                            style="display: none;">
+                            Next
+                        </button>
+                        <button class="button mx-1 has-text-light has-text-weight-bold is-danger" id="submitBtn">
+                            Submit
+                        </button>
                     </div>
 
                 </div>
@@ -104,6 +138,43 @@
                 d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
         </svg>
     </div>
+    <footer class="footer pt-2 pb-2 has-background-link-light">
+        <hr />
+        <div class="content">
+            <h1 class="has-text-centered">Country Flag Quiz</h1>
+
+            <h2>Why play this game?</h2>
+            <p class="is-size-5">
+                The Country Flag Quiz helps improve your geographical knowledge, enhances
+                memory retention, and is a fun way to learn about different countries and cultures. It's perfect for
+                students, trivia enthusiasts, and anyone who loves exploring the world!
+            </p>
+            <h2>Advantages:</h2>
+            <p>
+            <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                <li class="is-size-5">Interactive and educational.</li>
+                <li class="is-size-5">Engages users in a fun learning experience.</li>
+                <li class="is-size-5">Helps in recognizing and memorizing flags of various countries.</li>
+                <li class="is-size-5">Encourages competitive learning with friends and family.</li>
+            </ul>
+            </p>
+
+            <div class="has-text-right is-size-5">
+                <a class="mx-2" href="/">
+                    Home
+                </a>
+                <a class="mx-2" href="/pages/FlagQuiz.html">
+                    Flag Quiz
+                </a>
+                <a class="mx-2" href="/pages/CountryQuiz.html">
+                    Country Quiz
+                </a>
+                <a class="mx-2" href="/pages/Library.html">
+                    Library
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="../js/CountryQuiz.js"></script>

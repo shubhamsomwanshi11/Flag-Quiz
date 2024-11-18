@@ -11,74 +11,102 @@
 </head>
 
 <body>
-    <section class="section has-background-link">
-        <div class="container">
-            <h1 class="title has-text-centered has-text-light">Country Flag Quiz</h1>
-            <div class="container">
-                <div class="box">
-                    <div class="columns">
-                        <div class="column">
-                            <figure class="image is-128x128" style="margin: auto;">
-                                <img src="../assets/Book.png" alt="Placeholder image" />
-                            </figure>
-                            <p class="is-size-4 has-text-weight-bold">
-                                Library
-                            </p>
-                        </div>
-                        <div class="column is-flex is-justify-content-end is-align-items-center">
-                            <div class="buttons">
-                                <a class="button quizbtn is-rounded is-warning has-text-light has-text-weight-bold">Flag
-                                    Quiz <svg width="30" height="30" class="svgicon ml-1">
-                                        <use href="#playIC" />
-                                    </svg></a>
-                                <a class="button quizbtn is-rounded is-warning has-text-light has-text-weight-bold">Country
-                                    Quiz
-                                    <svg width="30" height="30" class="svgicon ml-1">
-                                        <use href="#playIC" />
-                                    </svg></a>
-                            </div>
+    <nav class="navbar py-2 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <h1 class="has-text-centered title">Country Flag Quiz</h1>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start mt-2 has-text-weight-bold">
+                <a href="/" class="navbar-item  customelem">
+                    Home
+                </a>
+
+                <a href="/pages/FlagQuiz.html" class="navbar-item customelem active">
+                    Flag Quiz
+                </a>
+                <a href="/pages/CountryQuiz.html" class="navbar-item customelem">
+                    Country Quiz
+                </a>
+                <a href="/pages/Library.html" class="navbar-item customelem">
+                    Library
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="section has-background-link mt-5">
+        <div class="pt-5">
+            <div class="box">
+                <div class="columns">
+                    <div class="column">
+                        <p class="is-size-3 has-text-weight-bold">
+                            Library
+                        </p>
+                    </div>
+                    <div class="column is-flex is-justify-content-end is-align-items-center">
+                        <div class="buttons">
+                            <a href="/pages/FlagQuiz.html"
+                                class="button quizbtn is-rounded is-warning has-text-light has-text-weight-bold">Flag
+                                Quiz <svg width="30" height="30" class="svgicon ml-1">
+                                    <use href="#playIC" />
+                                </svg></a>
+                            <a href="/pages/CountryQuiz.html"
+                                class="button quizbtn is-rounded is-warning has-text-light has-text-weight-bold">Country
+                                Quiz
+                                <svg width="30" height="30" class="svgicon ml-1">
+                                    <use href="#playIC" />
+                                </svg></a>
                         </div>
                     </div>
-                    <div class="is-flex is-justify-content-space-between">
-                        <p class="is-size-5">Explore about world flags, first learn, and then test
-                            your knowledge through quiz.</p>
+                </div>
+                <div class="is-flex is-justify-content-space-between">
+                    <p class="is-size-5">Explore about world flags, first learn, and then test
+                        your knowledge through quiz.</p>
 
-                        <div class="is-flex is-align-items-center">
-                            <p class="has-text-weight-semibold mr-1">Continet: </p>
-                            <div class="select is-success">
-                                <select class=" has-text-weight-semibold" id="continet">
-                                    <option value="All">All</option>
-                                    <option value="Africa">Africa</option>
-                                    <option value="Asia">Asia</option>
-                                    <option value="Europe">Europe</option>
-                                    <option value="North America">North America</option>
-                                    <option value="South America">South America</option>
-                                    <option value="Oceania">Oceania</option>
-                                </select>
-                            </div>
+                    <div class="is-flex is-align-items-center">
+                        <p class="has-text-weight-semibold mr-1">Continet: </p>
+                        <div class="select is-success">
+                            <select class=" has-text-weight-semibold" id="continet">
+                                <option value="All">All</option>
+                                <option value="Africa">Africa</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Europe">Europe</option>
+                                <option value="North America">North America</option>
+                                <option value="South America">South America</option>
+                                <option value="Oceania">Oceania</option>
+                            </select>
                         </div>
-
                     </div>
-                    <hr />
 
-                    <!-- Showing Flag Images -->
+                </div>
+                <hr />
 
-                    <div class="columns is-multiline" id="flagsContainer">
-                        <div class="column is-3">
-                            <div class="card has-background-link-light">
-                                <div class="card-content">
-                                    <a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank" rel="noopener"
-                                        title="Click to view detailed info about Afghanistan">
-                                        <figure class="image" style="margin: auto;">
-                                            <img class="flagimg" src="../assets/Flag Images/Afghanistan.png"
-                                                alt="Afghanistan Flag Image" />
-                                        </figure>
-                                        <p
-                                            class="is-size-5 has-text-black mt-2 has-text-centered has-text-weight-semibold">
-                                            Afghanistan
-                                        </p>
-                                    </a>
-                                </div>
+                <!-- Showing Flag Images -->
+
+                <div class="columns is-multiline" id="flagsContainer">
+                    <div class="column is-3">
+                        <div class="card has-background-link-light">
+                            <div class="card-content">
+                                <a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank" rel="noopener"
+                                    title="Click to view detailed info about Afghanistan">
+                                    <figure class="image" style="margin: auto;">
+                                        <img class="flagimg" src="../assets/Flag Images/Afghanistan.png"
+                                            alt="Afghanistan Flag Image" />
+                                    </figure>
+                                    <p class="is-size-5 has-text-black mt-2 has-text-centered has-text-weight-semibold">
+                                        Afghanistan
+                                    </p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -92,6 +120,45 @@
                 d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
         </svg>
     </div>
+
+    <footer class="footer pt-2 pb-2 has-background-link-light">
+        <hr />
+        <div class="content">
+            <h1 class="has-text-centered">Country Flag Quiz</h1>
+
+            <h2>Why play this game?</h2>
+            <p class="is-size-5">
+                The Country Flag Quiz helps improve your geographical knowledge, enhances
+                memory retention, and is a fun way to learn about different countries and cultures. It's perfect for
+                students, trivia enthusiasts, and anyone who loves exploring the world!
+            </p>
+            <h2>Advantages:</h2>
+            <p>
+            <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                <li class="is-size-5">Interactive and educational.</li>
+                <li class="is-size-5">Engages users in a fun learning experience.</li>
+                <li class="is-size-5">Helps in recognizing and memorizing flags of various countries.</li>
+                <li class="is-size-5">Encourages competitive learning with friends and family.</li>
+            </ul>
+            </p>
+
+            <div class="has-text-right is-size-5">
+                <a class="mx-2" href="/">
+                    Home
+                </a>
+                <a class="mx-2" href="/pages/FlagQuiz.html">
+                    Flag Quiz
+                </a>
+                <a class="mx-2" href="/pages/CountryQuiz.html">
+                    Country Quiz
+                </a>
+                <a class="mx-2" href="/pages/Library.html">
+                    Library
+                </a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
