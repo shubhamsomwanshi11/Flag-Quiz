@@ -31,7 +31,7 @@
                     Home
                 </a>
 
-                <a href="FlagQuiz.html" class="navbar-item customelem">
+                <a href="FlagQuiz.html" class="navbar-item customelem ">
                     Flag Quiz
                 </a>
                 <a href="CountryQuiz.html" class="navbar-item customelem active">
@@ -46,25 +46,47 @@
     <section class="section mt-5 has-background-link-light is is-flex is-align-items-center">
         <div class="container pb-5 mt-5 mb-5">
             <div class="box has-background-link">
-                <h2 class="has-text-centered is-size-3 has-text-weight-bold has-text-light">Name the Country</h2>
+                <h2 class="has-text-centered is-size-3 has-text-weight-bold has-text-light">Name the Flag</h2>
                 <p class="has-text-centered has-text-light is-size-5">
-                    A flag image will be displayed along with four answer choices. Select the correct option to test
-                    your knowledge!
+                    Country name will be displayed along with four answer choices.
+                    Select the correct option to test your knowledge!
                 </p>
                 <hr />
 
                 <div id="startArea">
-                    <div class="has-text-centered">
-                        <figure class="image is-128x128" style="margin: auto;">
-                            <img src="../assets/start.png" alt="Placeholder image">
-                        </figure>
-                        <h2 class="is-size-1 has-text-centered has-text-weight-bold  glowing-text"
-                            style="margin-top: -40px;" id="highestScore">0.00</h2>
-                        <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                            Highest Score
-                        </p>
+                    <div class="is-flex is-justify-content-center" style="width: 100%;">
+                        <div class="has-text-centered mx-3">
+                            <figure class="image is-128x128" style="margin: auto;">
+                                <img src="../assets/start.png" alt="Placeholder image">
+                            </figure>
+                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
+                                style="margin-top: -40px;"><span id="highestScoreHard"></span></h2>
+                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
+                                Hard Highest
+                            </p>
+                        </div>
+                        <div class="has-text-centered mx-3">
+                            <figure class="image is-128x128" style="margin: auto;">
+                                <img src="../assets/silver.png" alt="Placeholder image">
+                            </figure>
+                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
+                                style="margin-top: -40px;"><span id="highestScoreMedium"></span> </h2>
+                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
+                                Medium Highest
+                            </p>
+                        </div>
+                        <div class="has-text-centered mx-3">
+                            <figure class="image is-128x128" style="margin: auto;">
+                                <img src="../assets/bronze.png" alt="Placeholder image">
+                            </figure>
+                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
+                                style="margin-top: -40px;"><span id="highestScoreEasy"></span></h2>
+                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
+                                Easy Highest
+                            </p>
+                        </div>
                     </div>
-
+                    <hr style="width: 60%; margin: auto;" class="my-5" />
                     <div class="has-text-right is-flex is-justify-content-center mt-3">
                         <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Select Continent: </p>
                         <div class="select is-success is-rounded">
@@ -76,6 +98,17 @@
                                 <option value="North America">North America</option>
                                 <option value="South America">South America</option>
                                 <option value="Oceania">Oceania</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="has-text-right is-flex is-justify-content-center mt-3">
+                        <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Difficulty Level: </p>
+                        <div class="select is-success is-rounded">
+                            <select class="has-text-weight-semibold" value="Easy" id="level">
+                                <option value="Easy">Easy</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Hard">Hard</option>
                             </select>
                         </div>
                     </div>
@@ -103,13 +136,17 @@
                             <span class="has-text-grey">Time Remaining:</span>
                             <span id="remainingTime" class="has-text-danger has-text-weight-bold"></span>
                         </p>
+                        <p class="is-size-3 has-text-weight-semibold">
+                            <span class="has-text-grey">Question No</span>
+                            <span id="questionnumber" class="has-text-weight-bold"></span>
+                        </p>
                         <p class="is-size-5 has-text-weight-bold">
                             <span class="has-text-grey">Score:</span>
                             <span id="score" class="has-text-success">0</span>
                         </p>
                     </div>
 
-                    <figure class="has-text-centered mb-5">
+                    <figure class="has-text-centered mb-5 mt-3">
                         <img id="flagImage" loading="lazy" class="flagimg fade-in" alt="Flag Image">
                     </figure>
 

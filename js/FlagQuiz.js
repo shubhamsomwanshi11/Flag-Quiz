@@ -2,18 +2,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     const playNowBtn = document.getElementById("playNowBtn");
     const gameArea = document.getElementById("gameArea");
     const startArea = document.getElementById("startArea");
-    const flagImage = document.getElementById("flagImage");
     const optionsContainer = document.getElementById("optionsContainer");
     const nextBtn = document.getElementById("nextBtn");
     const submitBtn = document.getElementById("submitBtn");
     const scoreElement = document.getElementById("score");
     const remainingTime = document.getElementById("remainingTime");
-    const continent = document.getElementById('continent');
-    const timedQuiz = document.getElementById('timedQuiz');
-    let highestScore = localStorage.getItem("flagScore") || 0;
+    const continent = document.getElementById("continent");
+    const timedQuiz = document.getElementById("timedQuiz");
+    const level = document.getElementById("level");
+    const questionNumber = document.getElementById('questionnumber');
+    const highestScoreEasy = document.getElementById('highestScoreEasy');
+    const highestScoreMedium = document.getElementById('highestScoreMedium');
+    const highestScoreHard = document.getElementById('highestScoreHard');
 
+    let highestEasy = parseInt(localStorage.getItem("highestScoreEasy") || 0);
+    let highestMedium = parseInt(localStorage.getItem("highestScoreMedium") || 0);
+    let highestHard = parseInt(localStorage.getItem("highestScoreHard") || 0);
 
-    document.getElementById('highestScore').innerHTML = highestScore;
+    let questionNo = 0;
     let data = {};
     let currentData = [];
     let currentQuestionIndex = 0;
@@ -21,9 +27,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     let timer = 30 * 60; // 30 minutes in seconds
     let interval;
 
+    // Update displayed highest scores
+    const updateHighestScoresDisplay = () => {
+        highestScoreEasy.textContent = Math.round(highestEasy);
+        highestScoreMedium.textContent = Math.round(highestMedium);
+        highestScoreHard.textContent = Math.round(highestHard);
+    };
+
     // Fetch country data
     try {
-        data = await fetch('../data/countries.json').then((res) => res.json());
+        data = await fetch("../data/countries.json").then((res) => res.json());
     } catch (error) {
         console.error("Error fetching country data:", error);
     }
@@ -41,23 +54,27 @@ document.addEventListener("DOMContentLoaded", async () => {
         return shuffleArray([...options]);
     };
 
-
     // Render the current question
     const renderQuestion = () => {
+        questionNo++;
         if (currentQuestionIndex >= currentData.length) {
+            questionNo = 0;
             alert("Quiz Completed! Your Score: " + score);
+            updateHighestScore();
             resetGame();
             return;
         }
 
+        questionNumber.innerHTML = `<span class="has-text-success">${questionNo}</span> of <span class="has-text-warning">${currentData.length}</span>`;
         const currentCountry = currentData[currentQuestionIndex];
         const allCountries = Object.values(data).flat();
         const options = generateOptions(currentCountry, allCountries);
 
         // Display the country name as the question
-        document.getElementById('question').innerHTML = `<h2 class="is-size-4 has-text-weight-bold has-text-centered mb-4">
-        Which flag belongs to <span class="has-text-primary">${currentCountry.name}</span>?
-    </h2>`;
+        document.getElementById("question").innerHTML = `
+            <h2 class="is-size-4 has-text-weight-bold has-text-centered mb-4">
+                Which flag belongs to <span class="has-text-primary">${currentCountry.name}</span>?
+            </h2>`;
 
         // Generate flag image options
         optionsContainer.innerHTML = "";
@@ -94,12 +111,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         if (selectedOption === correctAnswer) {
             button.classList.add("is-success");
-            score += 1;
-            if (score > highestScore) {
-                highestScore = score;
-                localStorage.setItem("flagScore", highestScore);
-            }
-            scoreElement.textContent = score;
+
+            // Calculate score increment based on the number of questions
+            const totalMarks = 100;
+            const scoreIncrement = totalMarks / currentData.length;
+
+            score += scoreIncrement;
+            scoreElement.textContent = Math.round(score);
         } else {
             button.classList.add("is-danger");
             // Highlight the correct option
@@ -115,6 +133,20 @@ document.addEventListener("DOMContentLoaded", async () => {
         nextBtn.style.display = "block";
     };
 
+    // Update highest score based on level
+    const updateHighestScore = () => {
+        if (level.value === "Easy" && score > highestEasy) {
+            highestEasy = score;
+            localStorage.setItem("highestScoreEasy", highestEasy);
+        } else if (level.value === "Medium" && score > highestMedium) {
+            highestMedium = score;
+            localStorage.setItem("highestScoreMedium", highestMedium);
+        } else if (level.value === "Hard" && score > highestHard) {
+            highestHard = score;
+            localStorage.setItem("highestScoreHard", highestHard);
+        }
+        updateHighestScoresDisplay();
+    };
 
     // Reset the game
     const resetGame = () => {
@@ -143,9 +175,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 remainingTime.textContent = formatTime(timer);
                 if (timer <= 0) {
                     clearInterval(interval);
-                    alert("Time's up! Your Score: " + score);
+                    alert("Time's up! Your Score: " + Math.round(score));
+                    updateHighestScore();
                     resetGame();
-                    document.getElementById('highestScore').innerHTML = highestScore;
                 }
             }, 1000);
         } else {
@@ -154,9 +186,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     };
 
+    // Filter and limit data based on level
+    const filterAndLimitData = (data, continent, level) => {
+        let filteredData = continent === "All" ? Object.values(data).flat() : data[continent] || [];
+        if (level === "Easy") filteredData = filteredData.slice(0, 30);
+        else if (level === "Medium") filteredData = filteredData.slice(0, 70);
+        return shuffleArray(filteredData);
+    };
+
     // Start the game
     playNowBtn.addEventListener("click", () => {
-        currentData = getDataByContinent(data, continent.value);
+        currentData = filterAndLimitData(data, continent.value, level.value);
         startArea.style.display = "none";
         gameArea.style.display = "block";
         renderQuestion();
@@ -174,15 +214,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Submit button functionality
     submitBtn.addEventListener("click", () => {
         clearInterval(interval);
-        alert("Quiz Submitted! Your Score: " + score);
+        questionNo = 0;
+        alert("Quiz Submitted! Your Score: " + Math.round(score));
+        updateHighestScore();
         resetGame();
-        document.getElementById('highestScore').innerHTML = highestScore;
     });
-});
 
-function getDataByContinent(data, continent) {
-    if (continent === "All") {
-        return Object.values(data).flat();
-    }
-    return data[continent] || [];
-}
+    // Initialize highest scores display
+    updateHighestScoresDisplay();
+});
