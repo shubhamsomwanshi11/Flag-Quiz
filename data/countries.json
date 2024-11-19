@@ -3,952 +3,1140 @@
     {
       "name": "Algeria",
       "link": "https://en.wikipedia.org/wiki/Algeria",
-      "img": "Algeria.svg"
+      "img": "Algeria.svg",
+      "preference": 2
     },
     {
       "name": "Angola",
       "link": "https://en.wikipedia.org/wiki/Angola",
-      "img": "Angola.svg"
+      "img": "Angola.svg",
+      "preference": 2
     },
     {
       "name": "Benin",
       "link": "https://en.wikipedia.org/wiki/Benin",
-      "img": "Benin.svg"
+      "img": "Benin.svg",
+      "preference": 3
     },
     {
       "name": "Botswana",
       "link": "https://en.wikipedia.org/wiki/Botswana",
-      "img": "Botswana.svg"
+      "img": "Botswana.svg",
+      "preference": 2
     },
     {
       "name": "Burkina Faso",
       "link": "https://en.wikipedia.org/wiki/Burkina_Faso",
-      "img": "Burkina Faso.png"
+      "img": "Burkina Faso.png",
+      "preference": 3
     },
     {
       "name": "Burundi",
       "link": "https://en.wikipedia.org/wiki/Burundi",
-      "img": "Burundi.svg"
+      "img": "Burundi.svg",
+      "preference": 3
     },
     {
       "name": "Cabo Verde",
       "link": "https://en.wikipedia.org/wiki/Cabo_Verde",
-      "img": "Cabo Verde.svg"
+      "img": "Cabo Verde.svg",
+      "preference": 3
     },
     {
       "name": "Cameroon",
       "link": "https://en.wikipedia.org/wiki/Cameroon",
-      "img": "Cameroon.svg"
+      "img": "Cameroon.svg",
+      "preference": 2
     },
     {
       "name": "Central African Republic",
       "link": "https://en.wikipedia.org/wiki/Central_African_Republic",
-      "img": "Central African Republic.png"
+      "img": "Central African Republic.png",
+      "preference": 3
     },
     {
       "name": "Chad",
       "link": "https://en.wikipedia.org/wiki/Chad",
-      "img": "Chad.svg"
+      "img": "Chad.svg",
+      "preference": 3
     },
     {
       "name": "Comoros",
       "link": "https://en.wikipedia.org/wiki/Comoros",
-      "img": "Congo (Congo-Kinshasa).svg"
+      "img": "Congo (Congo-Kinshasa).svg",
+      "preference": 3
     },
     {
       "name": "Djibouti",
       "link": "https://en.wikipedia.org/wiki/Djibouti",
-      "img": "Djibouti.svg"
+      "img": "Djibouti.svg",
+      "preference": 3
     },
     {
       "name": "Egypt",
       "link": "https://en.wikipedia.org/wiki/Egypt",
-      "img": "Egypt.svg"
+      "img": "Egypt.svg",
+      "preference": 2
     },
     {
       "name": "Equatorial Guinea",
       "link": "https://en.wikipedia.org/wiki/Equatorial_Guinea",
-      "img": "Equatorial_Guinea.png"
+      "img": "Equatorial_Guinea.png",
+      "preference": 3
     },
     {
       "name": "Eritrea",
       "link": "https://en.wikipedia.org/wiki/Eritrea",
-      "img": "Eritrea.svg"
+      "img": "Eritrea.svg",
+      "preference": 3
     },
     {
       "name": "Eswatini",
       "link": "https://en.wikipedia.org/wiki/Eswatini",
-      "img": "Eswatini.png"
+      "img": "Eswatini.png",
+      "preference": 3
     },
     {
       "name": "Ethiopia",
       "link": "https://en.wikipedia.org/wiki/Ethiopia",
-      "img": "Ethiopia.svg"
+      "img": "Ethiopia.svg",
+      "preference": 2
     },
     {
       "name": "Gabon",
       "link": "https://en.wikipedia.org/wiki/Gabon",
-      "img": "Gabon.png"
+      "img": "Gabon.png",
+      "preference": 3
     },
     {
       "name": "Gambia",
       "link": "https://en.wikipedia.org/wiki/Gambia",
-      "img": "Gambia.png"
+      "img": "Gambia.png",
+      "preference": 3
     },
     {
       "name": "Ghana",
       "link": "https://en.wikipedia.org/wiki/Ghana",
-      "img": "Ghana.svg"
+      "img": "Ghana.svg",
+      "preference": 2
     },
     {
       "name": "Guinea",
       "link": "https://en.wikipedia.org/wiki/Guinea",
-      "img": "Guinea.png"
+      "img": "Guinea.png",
+      "preference": 3
     },
     {
       "name": "Guinea-Bissau",
       "link": "https://en.wikipedia.org/wiki/Guinea-Bissau",
-      "img": "Guinea-Bissau.png"
+      "img": "Guinea-Bissau.png",
+      "preference": 3
     },
     {
       "name": "Kenya",
       "link": "https://en.wikipedia.org/wiki/Kenya",
-      "img": "Kenya.svg"
+      "img": "Kenya.svg",
+      "preference": 2
     },
     {
       "name": "Lesotho",
       "link": "https://en.wikipedia.org/wiki/Lesotho",
-      "img": "Lesotho.png"
+      "img": "Lesotho.png",
+      "preference": 3
     },
     {
       "name": "Liberia",
       "link": "https://en.wikipedia.org/wiki/Liberia",
-      "img": "Liberia.png"
+      "img": "Liberia.png",
+      "preference": 3
     },
     {
       "name": "Libya",
       "link": "https://en.wikipedia.org/wiki/Libya",
-      "img": "Libya.png"
+      "img": "Libya.png",
+      "preference": 3
     },
     {
       "name": "Madagascar",
       "link": "https://en.wikipedia.org/wiki/Madagascar",
-      "img": "Madagascar.png"
+      "img": "Madagascar.png",
+      "preference": 3
     },
     {
       "name": "Malawi",
       "link": "https://en.wikipedia.org/wiki/Malawi",
-      "img": "Malawi.png"
+      "img": "Malawi.png",
+      "preference": 3
     },
     {
       "name": "Mali",
       "link": "https://en.wikipedia.org/wiki/Mali",
-      "img": "Mali.svg"
+      "img": "Mali.svg",
+      "preference": 3
     },
     {
       "name": "Mauritania",
       "link": "https://en.wikipedia.org/wiki/Mauritania",
-      "img": "Mauritania.png"
+      "img": "Mauritania.png",
+      "preference": 3
     },
     {
       "name": "Mauritius",
       "link": "https://en.wikipedia.org/wiki/Mauritius",
-      "img": "Mauritius.svg"
+      "img": "Mauritius.svg",
+      "preference": 3
     },
     {
       "name": "Morocco",
       "link": "https://en.wikipedia.org/wiki/Morocco",
-      "img": "Morocco.svg"
+      "img": "Morocco.svg",
+      "preference": 2
     },
     {
       "name": "Mozambique",
       "link": "https://en.wikipedia.org/wiki/Mozambique",
-      "img": "Mozambique.svg"
+      "img": "Mozambique.svg",
+      "preference": 2
     },
     {
       "name": "Namibia",
       "link": "https://en.wikipedia.org/wiki/Namibia",
-      "img": "Namibia.svg"
+      "img": "Namibia.svg",
+      "preference": 2
     },
     {
       "name": "Niger",
       "link": "https://en.wikipedia.org/wiki/Niger",
-      "img": "Niger.svg"
+      "img": "Niger.svg",
+      "preference": 3
     },
     {
       "name": "Nigeria",
       "link": "https://en.wikipedia.org/wiki/Nigeria",
-      "img": "Nigeria.png"
+      "img": "Nigeria.png",
+      "preference": 2
     },
     {
       "name": "Rwanda",
       "link": "https://en.wikipedia.org/wiki/Rwanda",
-      "img": "Rwanda.png"
+      "img": "Rwanda.png",
+      "preference": 2
     },
     {
       "name": "Sao Tome and Principe",
       "link": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
-      "img": "Sao Tome and Principe.png"
+      "img": "Sao Tome and Principe.png",
+      "preference": 3
     },
     {
       "name": "Senegal",
       "link": "https://en.wikipedia.org/wiki/Senegal",
-      "img": "Senegal.png"
+      "img": "Senegal.png",
+      "preference": 2
     },
     {
       "name": "Seychelles",
       "link": "https://en.wikipedia.org/wiki/Seychelles",
-      "img": "Seychelles.png"
+      "img": "Seychelles.png",
+      "preference": 3
     },
     {
       "name": "Sierra Leone",
       "link": "https://en.wikipedia.org/wiki/Sierra_Leone",
-      "img": "Sierra Leone.png"
+      "img": "Sierra Leone.png",
+      "preference": 3
     },
     {
       "name": "Somalia",
       "link": "https://en.wikipedia.org/wiki/Somalia",
-      "img": "Somalia.svg"
+      "img": "Somalia.svg",
+      "preference": 3
     },
     {
       "name": "South Africa",
       "link": "https://en.wikipedia.org/wiki/South_Africa",
-      "img": "South Africa.png"
+      "img": "South Africa.png",
+      "preference": 1
     },
     {
       "name": "South Sudan",
       "link": "https://en.wikipedia.org/wiki/South_Sudan",
-      "img": "South Sudan.png"
+      "img": "South Sudan.png",
+      "preference": 3
     },
     {
       "name": "Sudan",
       "link": "https://en.wikipedia.org/wiki/Sudan",
-      "img": "Sudan.svg"
+      "img": "Sudan.svg",
+      "preference": 2
     },
     {
       "name": "Tanzania",
       "link": "https://en.wikipedia.org/wiki/Tanzania",
-      "img": "Tanzania.svg"
+      "img": "Tanzania.svg",
+      "preference": 2
     },
     {
       "name": "Togo",
       "link": "https://en.wikipedia.org/wiki/Togo",
-      "img": "Togo.svg"
+      "img": "Togo.svg",
+      "preference": 3
     },
     {
       "name": "Tunisia",
       "link": "https://en.wikipedia.org/wiki/Tunisia",
-      "img": "Tunisia.png"
+      "img": "Tunisia.png",
+      "preference": 2
     },
     {
       "name": "Uganda",
       "link": "https://en.wikipedia.org/wiki/Uganda",
-      "img": "Uganda.png"
+      "img": "Uganda.png",
+      "preference": 3
     },
     {
       "name": "Zambia",
       "link": "https://en.wikipedia.org/wiki/Zambia",
-      "img": "Zambia.svg"
+      "img": "Zambia.svg",
+      "preference": 2
     },
     {
       "name": "Zimbabwe",
       "link": "https://en.wikipedia.org/wiki/Zimbabwe",
-      "img": "Zimbabwe.svg"
+      "img": "Zimbabwe.svg",
+      "preference": 2
     }
   ],
   "Asia": [
     {
       "name": "Afghanistan",
       "link": "https://en.wikipedia.org/wiki/Afghanistan",
-      "img": "Afghanistan.png"
+      "img": "Afghanistan.png",
+      "preference": 3
     },
     {
       "name": "Armenia",
       "link": "https://en.wikipedia.org/wiki/Armenia",
-      "img": "Armenia.svg"
+      "img": "Armenia.svg",
+      "preference": 2
     },
     {
       "name": "Azerbaijan",
       "link": "https://en.wikipedia.org/wiki/Azerbaijan",
-      "img": "Azerbaijan.svg"
+      "img": "Azerbaijan.svg",
+      "preference": 2
     },
     {
       "name": "Bahrain",
       "link": "https://en.wikipedia.org/wiki/Bahrain",
-      "img": "Bahrain.svg"
+      "img": "Bahrain.svg",
+      "preference": 3
     },
     {
       "name": "Bangladesh",
       "link": "https://en.wikipedia.org/wiki/Bangladesh",
-      "img": "Bangladesh.png"
+      "img": "Bangladesh.png",
+      "preference": 2
     },
     {
       "name": "Bhutan",
       "link": "https://en.wikipedia.org/wiki/Bhutan",
-      "img": "Bhutan.svg"
+      "img": "Bhutan.svg",
+      "preference": 3
     },
     {
       "name": "Brunei",
       "link": "https://en.wikipedia.org/wiki/Brunei",
-      "img": "Brunei.svg"
+      "img": "Brunei.svg",
+      "preference": 3
     },
     {
       "name": "Cambodia",
       "link": "https://en.wikipedia.org/wiki/Cambodia",
-      "img": "Cambodia.svg"
+      "img": "Cambodia.svg",
+      "preference": 3
     },
     {
       "name": "China",
       "link": "https://en.wikipedia.org/wiki/China",
-      "img": "China.png"
+      "img": "China.png",
+      "preference": 1
     },
     {
       "name": "Cyprus",
       "link": "https://en.wikipedia.org/wiki/Cyprus",
-      "img": "Cyprus.svg"
+      "img": "Cyprus.svg",
+      "preference": 2
     },
     {
       "name": "Georgia",
       "link": "https://en.wikipedia.org/wiki/Georgia_(country)",
-      "img": "Georgia.png"
+      "img": "Georgia.png",
+      "preference": 2
     },
     {
       "name": "India",
       "link": "https://en.wikipedia.org/wiki/India",
-      "img": "India.png"
+      "img": "India.png",
+      "preference": 1
     },
     {
       "name": "Indonesia",
       "link": "https://en.wikipedia.org/wiki/Indonesia",
-      "img": "Indonesia.svg"
+      "img": "Indonesia.svg",
+      "preference": 1
     },
     {
       "name": "Iran",
       "link": "https://en.wikipedia.org/wiki/Iran",
-      "img": "Iran.svg"
+      "img": "Iran.svg",
+      "preference": 2
     },
     {
       "name": "Iraq",
       "link": "https://en.wikipedia.org/wiki/Iraq",
-      "img": "Iraq.svg"
+      "img": "Iraq.svg",
+      "preference": 2
     },
     {
       "name": "Israel",
       "link": "https://en.wikipedia.org/wiki/Israel",
-      "img": "Israel.svg"
+      "img": "Israel.svg",
+      "preference": 3
     },
     {
       "name": "Japan",
       "link": "https://en.wikipedia.org/wiki/Japan",
-      "img": "Japan.svg"
+      "img": "Japan.svg",
+      "preference": 1
     },
     {
       "name": "Jordan",
       "link": "https://en.wikipedia.org/wiki/Jordan",
-      "img": "Jordan.svg"
+      "img": "Jordan.svg",
+      "preference": 2
     },
     {
       "name": "Kazakhstan",
       "link": "https://en.wikipedia.org/wiki/Kazakhstan",
-      "img": "Kazakhstan.svg"
+      "img": "Kazakhstan.svg",
+      "preference": 2
     },
     {
       "name": "Kuwait",
       "link": "https://en.wikipedia.org/wiki/Kuwait",
-      "img": "Kuwait.png"
+      "img": "Kuwait.png",
+      "preference": 2
     },
     {
       "name": "Kyrgyzstan",
       "link": "https://en.wikipedia.org/wiki/Kyrgyzstan",
-      "img": "Kyrgyzstan.svg"
+      "img": "Kyrgyzstan.svg",
+      "preference": 3
     },
     {
       "name": "Laos",
       "link": "https://en.wikipedia.org/wiki/Laos",
-      "img": "Laos.svg"
+      "img": "Laos.svg",
+      "preference": 3
     },
     {
       "name": "Lebanon",
       "link": "https://en.wikipedia.org/wiki/Lebanon",
-      "img": "Lebanon.svg"
+      "img": "Lebanon.svg",
+      "preference": 2
     },
     {
       "name": "Malaysia",
       "link": "https://en.wikipedia.org/wiki/Malaysia",
-      "img": "Malaysia.svg"
+      "img": "Malaysia.svg",
+      "preference": 1
     },
     {
       "name": "Maldives",
       "link": "https://en.wikipedia.org/wiki/Maldives",
-      "img": "Maldives.png"
+      "img": "Maldives.png",
+      "preference": 2
     },
     {
       "name": "Mongolia",
       "link": "https://en.wikipedia.org/wiki/Mongolia",
-      "img": "Mongolia.svg"
+      "img": "Mongolia.svg",
+      "preference": 3
     },
     {
       "name": "Myanmar",
       "link": "https://en.wikipedia.org/wiki/Myanmar",
-      "img": "Myanmar.png"
+      "img": "Myanmar.png",
+      "preference": 3
     },
     {
       "name": "Nepal",
       "link": "https://en.wikipedia.org/wiki/Nepal",
-      "img": "Nepal.svg"
+      "img": "Nepal.svg",
+      "preference": 3
     },
     {
       "name": "Oman",
       "link": "https://en.wikipedia.org/wiki/Oman",
-      "img": "Oman.svg"
+      "img": "Oman.svg",
+      "preference": 3
     },
     {
       "name": "Pakistan",
       "link": "https://en.wikipedia.org/wiki/Pakistan",
-      "img": "Pakistan.svg"
+      "img": "Pakistan.svg",
+      "preference": 2
     },
     {
       "name": "Philippines",
       "link": "https://en.wikipedia.org/wiki/Philippines",
-      "img": "Philippines.svg"
+      "img": "Philippines.svg",
+      "preference": 1
     },
     {
       "name": "Qatar",
       "link": "https://en.wikipedia.org/wiki/Qatar",
-      "img": "Qatar.svg"
+      "img": "Qatar.svg",
+      "preference": 2
     },
     {
       "name": "Saudi Arabia",
       "link": "https://en.wikipedia.org/wiki/Saudi_Arabia",
-      "img": "Saudi Arabia.png"
+      "img": "Saudi Arabia.png",
+      "preference": 1
     },
     {
       "name": "Singapore",
       "link": "https://en.wikipedia.org/wiki/Singapore",
-      "img": "Singapore.svg"
+      "img": "Singapore.svg",
+      "preference": 1
     },
     {
       "name": "Sri Lanka",
       "link": "https://en.wikipedia.org/wiki/Sri_Lanka",
-      "img": "Sri Lanka.svg"
+      "img": "Sri Lanka.svg",
+      "preference": 2
     },
     {
       "name": "Syria",
       "link": "https://en.wikipedia.org/wiki/Syria",
-      "img": "Syria.svg"
+      "img": "Syria.svg",
+      "preference": 3
     },
     {
       "name": "Taiwan",
       "link": "https://en.wikipedia.org/wiki/Taiwan",
-      "img": "Taiwan.png"
+      "img": "Taiwan.png",
+      "preference": 3
     },
     {
       "name": "Tajikistan",
       "link": "https://en.wikipedia.org/wiki/Tajikistan",
-      "img": "Tajikistan.png"
+      "img": "Tajikistan.png",
+      "preference": 3
     },
     {
       "name": "Thailand",
       "link": "https://en.wikipedia.org/wiki/Thailand",
-      "img": "Thailand.svg"
+      "img": "Thailand.svg",
+      "preference": 1
     },
     {
       "name": "Turkey",
       "link": "https://en.wikipedia.org/wiki/Turkey",
-      "img": "Turkey.svg"
+      "img": "Turkey.svg",
+      "preference": 1
     },
     {
       "name": "Turkmenistan",
       "link": "https://en.wikipedia.org/wiki/Turkmenistan",
-      "img": "Turkmenis.png"
+      "img": "Turkmenis.png",
+      "preference": 3
     },
     {
       "name": "United Arab Emirates",
       "link": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
-      "img": "United Arab Emirates.png"
+      "img": "United Arab Emirates.png",
+      "preference": 1
     },
     {
       "name": "Uzbekistan",
       "link": "https://en.wikipedia.org/wiki/Uzbekistan",
-      "img": "Uzbekistan.svg"
+      "img": "Uzbekistan.svg",
+      "preference": 2
     },
     {
       "name": "Vietnam",
       "link": "https://en.wikipedia.org/wiki/Vietnam",
-      "img": "Vietnam.svg"
+      "img": "Vietnam.svg",
+      "preference": 1
     },
     {
       "name": "Yemen",
       "link": "https://en.wikipedia.org/wiki/Yemen",
-      "img": "Yemen.png"
+      "img": "Yemen.png",
+      "preference": 3
     }
   ],
   "Europe": [
     {
       "name": "Albania",
       "link": "https://en.wikipedia.org/wiki/Albania",
-      "img": "Albania.svg"
+      "img": "Albania.svg",
+      "preference": 3
     },
     {
       "name": "Andorra",
       "link": "https://en.wikipedia.org/wiki/Andorra",
-      "img": "Andorra.png"
+      "img": "Andorra.png",
+      "preference": 3
     },
     {
       "name": "Austria",
       "link": "https://en.wikipedia.org/wiki/Austria",
-      "img": "Austria.svg"
+      "img": "Austria.svg",
+      "preference": 2
     },
     {
       "name": "Belarus",
       "link": "https://en.wikipedia.org/wiki/Belarus",
-      "img": "Belarus.svg"
+      "img": "Belarus.svg",
+      "preference": 2
     },
     {
       "name": "Belgium",
       "link": "https://en.wikipedia.org/wiki/Belgium",
-      "img": "Belgium.svg"
+      "img": "Belgium.svg",
+      "preference": 2
     },
     {
       "name": "Bosnia and Herzegovina",
       "link": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina",
-      "img": "Bosnia and Herzegovina.png"
+      "img": "Bosnia and Herzegovina.png",
+      "preference": 3
     },
     {
       "name": "Bulgaria",
       "link": "https://en.wikipedia.org/wiki/Bulgaria",
-      "img": "Bulgaria.png"
+      "img": "Bulgaria.png",
+      "preference": 2
     },
     {
       "name": "Croatia",
       "link": "https://en.wikipedia.org/wiki/Croatia",
-      "img": "Croatia.svg"
+      "img": "Croatia.svg",
+      "preference": 2
     },
     {
       "name": "Denmark",
       "link": "https://en.wikipedia.org/wiki/Denmark",
-      "img": "Denmark.svg"
+      "img": "Denmark.svg",
+      "preference": 2
     },
     {
       "name": "Estonia",
       "link": "https://en.wikipedia.org/wiki/Estonia",
-      "img": "Estonia.png"
+      "img": "Estonia.png",
+      "preference": 2
     },
     {
       "name": "Finland",
       "link": "https://en.wikipedia.org/wiki/Finland",
-      "img": "Finland.svg"
+      "img": "Finland.svg",
+      "preference": 2
     },
     {
       "name": "France",
       "link": "https://en.wikipedia.org/wiki/France",
-      "img": "France.svg"
+      "img": "France.svg",
+      "preference": 1
     },
     {
       "name": "Germany",
       "link": "https://en.wikipedia.org/wiki/Germany",
-      "img": "Germany.svg"
+      "img": "Germany.svg",
+      "preference": 1
     },
     {
       "name": "Greece",
       "link": "https://en.wikipedia.org/wiki/Greece",
-      "img": "Greece.svg"
+      "img": "Greece.svg",
+      "preference": 2
     },
     {
       "name": "Hungary",
       "link": "https://en.wikipedia.org/wiki/Hungary",
-      "img": "Hungary.svg"
+      "img": "Hungary.svg",
+      "preference": 2
     },
     {
       "name": "Iceland",
       "link": "https://en.wikipedia.org/wiki/Iceland",
-      "img": "Iceland.png"
+      "img": "Iceland.png",
+      "preference": 2
     },
     {
       "name": "Ireland",
       "link": "https://en.wikipedia.org/wiki/Ireland",
-      "img": "Ireland.svg"
+      "img": "Ireland.svg",
+      "preference": 2
     },
     {
       "name": "Italy",
       "link": "https://en.wikipedia.org/wiki/Italy",
-      "img": "Italy.svg"
+      "img": "Italy.svg",
+      "preference": 1
     },
     {
       "name": "Latvia",
       "link": "https://en.wikipedia.org/wiki/Latvia",
-      "img": "Latvia.svg"
+      "img": "Latvia.svg",
+      "preference": 2
     },
     {
       "name": "Liechtenstein",
       "link": "https://en.wikipedia.org/wiki/Liechtenstein",
-      "img": "Liechtenstein.svg"
+      "img": "Liechtenstein.svg",
+      "preference": 3
     },
     {
       "name": "Lithuania",
       "link": "https://en.wikipedia.org/wiki/Lithuania",
-      "img": "Lithuania.svg"
+      "img": "Lithuania.svg",
+      "preference": 2
     },
     {
       "name": "Luxembourg",
       "link": "https://en.wikipedia.org/wiki/Luxembourg",
-      "img": "Luxembourg.png"
+      "img": "Luxembourg.png",
+      "preference": 2
     },
     {
       "name": "Malta",
       "link": "https://en.wikipedia.org/wiki/Malta",
-      "img": "Malta.svg"
+      "img": "Malta.svg",
+      "preference": 2
     },
     {
       "name": "Moldova",
       "link": "https://en.wikipedia.org/wiki/Moldova",
-      "img": "Moldova.svg"
+      "img": "Moldova.svg",
+      "preference": 2
     },
     {
       "name": "Monaco",
       "link": "https://en.wikipedia.org/wiki/Monaco",
-      "img": "Monaco.png"
+      "img": "Monaco.png",
+      "preference": 3
     },
     {
       "name": "Montenegro",
       "link": "https://en.wikipedia.org/wiki/Montenegro",
-      "img": "Montenegro.png"
+      "img": "Montenegro.png",
+      "preference": 2
     },
     {
       "name": "Netherlands",
       "link": "https://en.wikipedia.org/wiki/Netherlands",
-      "img": "Netherlands.svg"
+      "img": "Netherlands.svg",
+      "preference": 1
     },
     {
       "name": "North Macedonia",
       "link": "https://en.wikipedia.org/wiki/North_Macedonia",
-      "img": "North Macedonia.png"
+      "img": "North Macedonia.png",
+      "preference": 2
     },
     {
       "name": "Norway",
       "link": "https://en.wikipedia.org/wiki/Norway",
-      "img": "Norway.svg"
+      "img": "Norway.svg",
+      "preference": 2
     },
     {
       "name": "Poland",
       "link": "https://en.wikipedia.org/wiki/Poland",
-      "img": "Poland.svg"
+      "img": "Poland.svg",
+      "preference": 2
     },
     {
       "name": "Portugal",
       "link": "https://en.wikipedia.org/wiki/Portugal",
-      "img": "Portugal.png"
+      "img": "Portugal.png",
+      "preference": 2
     },
     {
       "name": "Romania",
       "link": "https://en.wikipedia.org/wiki/Romania",
-      "img": "Romania.svg"
+      "img": "Romania.svg",
+      "preference": 3
     },
     {
       "name": "Russia",
       "link": "https://en.wikipedia.org/wiki/Russia",
-      "img": "Russia.svg"
+      "img": "Russia.svg",
+      "preference": 1
     },
     {
       "name": "San Marino",
       "link": "https://en.wikipedia.org/wiki/San_Marino",
-      "img": "San Marino.png"
+      "img": "San Marino.png",
+      "preference": 3
     },
     {
       "name": "Serbia",
       "link": "https://en.wikipedia.org/wiki/Serbia",
-      "img": "Serbia.png"
+      "img": "Serbia.png",
+      "preference": 2
     },
     {
       "name": "Slovakia",
       "link": "https://en.wikipedia.org/wiki/Slovakia",
-      "img": "Slovakia.svg"
+      "img": "Slovakia.svg",
+      "preference": 2
     },
     {
       "name": "Slovenia",
       "link": "https://en.wikipedia.org/wiki/Slovenia",
-      "img": "Slovenia.svg"
+      "img": "Slovenia.svg",
+      "preference": 2
     },
     {
       "name": "Spain",
       "link": "https://en.wikipedia.org/wiki/Spain",
-      "img": "Spain.svg"
+      "img": "Spain.svg",
+      "preference": 1
     },
     {
       "name": "Sweden",
       "link": "https://en.wikipedia.org/wiki/Sweden",
-      "img": "Sweden.svg"
+      "img": "Sweden.svg",
+      "preference": 1
     },
     {
       "name": "Switzerland",
       "link": "https://en.wikipedia.org/wiki/Switzerland",
-      "img": "Switzerland.png"
+      "img": "Switzerland.png",
+      "preference": 1
     },
     {
       "name": "Ukraine",
       "link": "https://en.wikipedia.org/wiki/Ukraine",
-      "img": "Ukraine.svg"
+      "img": "Ukraine.svg",
+      "preference": 2
     },
     {
       "name": "United Kingdom",
       "link": "https://en.wikipedia.org/wiki/United_Kingdom",
-      "img": "United Kingdom.png"
+      "img": "United Kingdom.png",
+      "preference": 1
     },
     {
       "name": "Vatican City",
       "link": "https://en.wikipedia.org/wiki/Vatican_City",
-      "img": "Vatican City.png"
+      "img": "Vatican City.png",
+      "preference": 3
     }
   ],
   "North America": [
     {
       "name": "Antigua and Barbuda",
       "link": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda",
-      "img": "Antigua and Barbuda.png"
+      "img": "Antigua and Barbuda.png",
+      "preference": 3
     },
     {
       "name": "Bahamas",
       "link": "https://en.wikipedia.org/wiki/Bahamas",
-      "img": "Bahamas.svg"
+      "img": "Bahamas.svg",
+      "preference": 3
     },
     {
       "name": "Barbados",
       "link": "https://en.wikipedia.org/wiki/Barbados",
-      "img": "Barbados.svg"
+      "img": "Barbados.svg",
+      "preference": 3
     },
     {
       "name": "Belize",
       "link": "https://en.wikipedia.org/wiki/Belize",
-      "img": "Belize.svg"
+      "img": "Belize.svg",
+      "preference": 3
     },
     {
       "name": "Canada",
       "link": "https://en.wikipedia.org/wiki/Canada",
-      "img": "Canada.svg"
+      "img": "Canada.svg",
+      "preference": 1
     },
     {
       "name": "Costa Rica",
       "link": "https://en.wikipedia.org/wiki/Costa_Rica",
-      "img": "Costa Rica.png"
+      "img": "Costa Rica.png",
+      "preference": 3
     },
     {
       "name": "Cuba",
       "link": "https://en.wikipedia.org/wiki/Cuba",
-      "img": "Cuba.png"
+      "img": "Cuba.png",
+      "preference": 3
     },
     {
       "name": "Dominica",
       "link": "https://en.wikipedia.org/wiki/Dominica",
-      "img": "Dominica.png"
+      "img": "Dominica.png",
+      "preference": 3
     },
     {
       "name": "Dominican Republic",
       "link": "https://en.wikipedia.org/wiki/Dominican_Republic",
-      "img": "Dominican Republic.png"
+      "img": "Dominican Republic.png",
+      "preference": 3
     },
     {
       "name": "El Salvador",
       "link": "https://en.wikipedia.org/wiki/El_Salvador",
-      "img": "El_Salvador.png"
+      "img": "El_Salvador.png",
+      "preference": 3
     },
     {
       "name": "Grenada",
       "link": "https://en.wikipedia.org/wiki/Grenada",
-      "img": "Grenada.png"
+      "img": "Grenada.png",
+      "preference": 3
     },
     {
       "name": "Guatemala",
       "link": "https://en.wikipedia.org/wiki/Guatemala",
-      "img": "Guatemala.png"
+      "img": "Guatemala.png",
+      "preference": 3
     },
     {
       "name": "Haiti",
       "link": "https://en.wikipedia.org/wiki/Haiti",
-      "img": "Haiti.svg"
+      "img": "Haiti.svg",
+      "preference": 3
     },
     {
       "name": "Honduras",
       "link": "https://en.wikipedia.org/wiki/Honduras",
-      "img": "Honduras.png"
+      "img": "Honduras.png",
+      "preference": 3
     },
     {
       "name": "Jamaica",
       "link": "https://en.wikipedia.org/wiki/Jamaica",
-      "img": "Jamaica.svg"
+      "img": "Jamaica.svg",
+      "preference": 2
     },
     {
       "name": "Mexico",
       "link": "https://en.wikipedia.org/wiki/Mexico",
-      "img": "Mexico.png"
+      "img": "Mexico.png",
+      "preference": 1
     },
     {
       "name": "Nicaragua",
       "link": "https://en.wikipedia.org/wiki/Nicaragua",
-      "img": "Nicaragua.png"
+      "img": "Nicaragua.png",
+      "preference": 3
     },
     {
       "name": "Panama",
       "link": "https://en.wikipedia.org/wiki/Panama",
-      "img": "Panama.png"
+      "img": "Panama.png",
+      "preference": 2
     },
     {
       "name": "Saint Kitts and Nevis",
       "link": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis",
-      "img": "Saint Kitts and Nevis.png"
+      "img": "Saint Kitts and Nevis.png",
+      "preference": 3
     },
     {
       "name": "Saint Lucia",
       "link": "https://en.wikipedia.org/wiki/Saint_Lucia",
-      "img": "Saint Lucia.png"
+      "img": "Saint Lucia.png",
+      "preference": 3
     },
     {
       "name": "Saint Vincent and the Grenadines",
       "link": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines",
-      "img": "Saint Vincent and the Grenadines.png"
+      "img": "Saint Vincent and the Grenadines.png",
+      "preference": 3
     },
     {
       "name": "Trinidad and Tobago",
       "link": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago",
-      "img": "Trinidad and Tobago.svg"
+      "img": "Trinidad and Tobago.svg",
+      "preference": 3
     },
     {
       "name": "United States",
       "link": "https://en.wikipedia.org/wiki/United_States",
-      "img": "United States.svg"
+      "img": "United States.svg",
+      "preference": 1
     }
   ],
   "South America": [
     {
       "name": "Argentina",
       "link": "https://en.wikipedia.org/wiki/Argentina",
-      "img": "Argentina.svg"
+      "img": "Argentina.svg",
+      "preference": 1
     },
     {
       "name": "Bolivia",
       "link": "https://en.wikipedia.org/wiki/Bolivia",
-      "img": "Bolivia.svg"
+      "img": "Bolivia.svg",
+      "preference": 3
     },
     {
       "name": "Brazil",
       "link": "https://en.wikipedia.org/wiki/Brazil",
-      "img": "Brazil.svg"
+      "img": "Brazil.svg",
+      "preference": 1
     },
     {
       "name": "Chile",
       "link": "https://en.wikipedia.org/wiki/Chile",
-      "img": "Chile.svg"
+      "img": "Chile.svg",
+      "preference": 2
     },
     {
       "name": "Colombia",
       "link": "https://en.wikipedia.org/wiki/Colombia",
-      "img": "Colombia.svg"
+      "img": "Colombia.svg",
+      "preference": 2
     },
     {
       "name": "Ecuador",
       "link": "https://en.wikipedia.org/wiki/Ecuador",
-      "img": "Ecuador.svg"
+      "img": "Ecuador.svg",
+      "preference": 3
     },
     {
       "name": "Guyana",
       "link": "https://en.wikipedia.org/wiki/Guyana",
-      "img": "Guyana.svg"
+      "img": "Guyana.svg",
+      "preference": 3
     },
     {
       "name": "Paraguay",
       "link": "https://en.wikipedia.org/wiki/Paraguay",
-      "img": "Paraguay.svg"
+      "img": "Paraguay.svg",
+      "preference": 2
     },
     {
       "name": "Peru",
       "link": "https://en.wikipedia.org/wiki/Peru",
-      "img": "Peru.svg"
+      "img": "Peru.svg",
+      "preference": 2
     },
     {
       "name": "Suriname",
       "link": "https://en.wikipedia.org/wiki/Suriname",
-      "img": "Suriname.svg"
+      "img": "Suriname.svg",
+      "preference": 3
     },
     {
       "name": "Uruguay",
       "link": "https://en.wikipedia.org/wiki/Uruguay",
-      "img": "Uruguay.png"
+      "img": "Uruguay.png",
+      "preference": 3
     },
     {
       "name": "Venezuela",
       "link": "https://en.wikipedia.org/wiki/Venezuela",
-      "img": "Venezuela.svg"
+      "img": "Venezuela.svg",
+      "preference": 2
     }
   ],
   "Oceania": [
     {
       "name": "Australia",
       "link": "https://en.wikipedia.org/wiki/Australia",
-      "img": "Australia.svg"
+      "img": "Australia.svg",
+      "preference": 1
     },
     {
       "name": "Fiji",
       "link": "https://en.wikipedia.org/wiki/Fiji",
-      "img": "Fiji.png"
+      "img": "Fiji.png",
+      "preference": 3
     },
     {
       "name": "Kiribati",
       "link": "https://en.wikipedia.org/wiki/Kiribati",
-      "img": "Kiribati.png"
+      "img": "Kiribati.png",
+      "preference": 3
     },
     {
       "name": "Marshall Islands",
       "link": "https://en.wikipedia.org/wiki/Marshall_Islands",
-      "img": "Marshall.png"
+      "img": "Marshall.png",
+      "preference": 3
     },
     {
       "name": "Micronesia",
       "link": "https://en.wikipedia.org/wiki/Micronesia",
-      "img": "Micronesia.png"
+      "img": "Micronesia.png",
+      "preference": 3
     },
     {
       "name": "Nauru",
       "link": "https://en.wikipedia.org/wiki/Nauru",
-      "img": "Nauru.svg"
+      "img": "Nauru.svg",
+      "preference": 3
     },
     {
       "name": "New Zealand",
       "link": "https://en.wikipedia.org/wiki/New_Zealand",
-      "img": "New Zealand.png"
+      "img": "New Zealand.png",
+      "preference": 1
     },
     {
       "name": "Palau",
       "link": "https://en.wikipedia.org/wiki/Palau",
-      "img": "Palau.svg"
+      "img": "Palau.svg",
+      "preference": 3
     },
     {
       "name": "Papua New Guinea",
       "link": "https://en.wikipedia.org/wiki/Papua_New_Guinea",
-      "img": "Papua New Guinea.png"
+      "img": "Papua New Guinea.png",
+      "preference": 3
     },
     {
       "name": "Samoa",
       "link": "https://en.wikipedia.org/wiki/Samoa",
-      "img": "Samoa.png"
+      "img": "Samoa.png",
+      "preference": 3
     },
     {
       "name": "Solomon Islands",
       "link": "https://en.wikipedia.org/wiki/Solomon_Islands",
-      "img": "Solomon Islands.png"
+      "img": "Solomon Islands.png",
+      "preference": 3
     },
     {
       "name": "Tonga",
       "link": "https://en.wikipedia.org/wiki/Tonga",
-      "img": "Tonga.svg"
+      "img": "Tonga.svg",
+      "preference": 3
     },
     {
       "name": "Tuvalu",
       "link": "https://en.wikipedia.org/wiki/Tuvalu",
-      "img": "Tuvalu.png"
+      "img": "Tuvalu.png",
+      "preference": 3
     },
     {
       "name": "Vanuatu",
       "link": "https://en.wikipedia.org/wiki/Vanuatu",
-      "img": "Vanuatu.png"
+      "img": "Vanuatu.png",
+      "preference": 3
     }
   ]
 }

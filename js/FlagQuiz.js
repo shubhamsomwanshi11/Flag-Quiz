@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Reset the game
     const resetGame = () => {
+        updateHighestScore();
         currentQuestionIndex = 0;
         score = 0;
         timer = 30 * 60;
@@ -188,11 +189,31 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Filter and limit data based on level
     const filterAndLimitData = (data, continent, level) => {
+        // Get the data for the specified continent, or all continents if "All" is selected
         let filteredData = continent === "All" ? Object.values(data).flat() : data[continent] || [];
-        if (level === "Easy") filteredData = filteredData.slice(0, 30);
-        else if (level === "Medium") filteredData = filteredData.slice(0, 70);
-        return shuffleArray(filteredData);
+
+        // Shuffle the filtered data
+        filteredData = shuffleArray(filteredData);
+
+        // Filter data based on the level and add fallback logic
+        let result = [];
+        if (level === "Easy") {
+            result = filteredData.filter(item => item.preference === 1);
+            if (result.length < 30) {
+                const additionalData = filteredData.filter(item => item.preference !== 1).slice(0, 30 - result.length);
+                result = result.concat(additionalData);
+            }
+        } else if (level === "Medium") {
+            result = filteredData.filter(item => item.preference === 2);
+            if (result.length < 70) {
+                const additionalData = filteredData.filter(item => item.preference !== 2).slice(0, 70 - result.length);
+                result = result.concat(additionalData);
+            }
+        }
+
+        return result;
     };
+
 
     // Start the game
     playNowBtn.addEventListener("click", () => {
