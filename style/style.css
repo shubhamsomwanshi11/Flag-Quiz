@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+.modal-card {
+    width: fit-content;
+}
+
 .gamecard .button,
 .quizbtn {
     border: none;

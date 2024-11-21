@@ -7,7 +7,7 @@
     <title>Country Flag Quiz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </head>
 
 <body>
@@ -41,6 +41,19 @@
                 <a href="pages/Library.html" class="navbar-item customelem">
                     Library
                 </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-link is-outlined" id="register">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" id="login">
+                            Log in
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -218,10 +231,107 @@
         </svg>
     </div>
 
-    <script>
-        let highestScore = localStorage.getItem("flagScore") || 0;
-        document.getElementById('highestScore').innerHTML = highestScore;
-    </script>
+
+    <!-- Modal -->
+    <!-- Register -->
+    <div class="modal" id="rmodal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title has-text-centered has-text-weight-bold">Register</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label for="name" class="has-text-weight-semibold">
+                            Name
+                        </label>
+                        <input type="text" id="name" placeholder="John Doe" class="input is-medium" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="has-text-weight-semibold">
+                            Enter your Mail
+                        </label>
+                        <input type="email" id="email" placeholder="johndoe@gmail.com" class="input is-medium" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="has-text-weight-semibold">
+                            Password
+                        </label>
+                        <input id="password" type="password" class="input is-medium" placeholder="Password" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="password" class="has-text-weight-semibold">
+                            Confirm Password
+                        </label>
+                        <input id="confirmPassword" type="password" class="input is-medium" placeholder="Password"
+                            required>
+                    </div>
+                    <button type="submit" class="button is-fullwidth is-medium  has-text-light"
+                        style="background-color: #8f00cd;">Register</button>
+                </form>
+                <hr>
+                <p class="is-size-5 has-text-centered">or</p>
+                <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="./assets/google.png"
+                        alt="" style="width: 30px;" class="mr-3"> Continue with Google </button>
+            </section>
+            <footer class="modal-card-foot">
+                <p class="is-size-5 has-text-centered" style="margin: auto;">Already have an account? <button
+                        class="button is-ghost has-text-link" style="margin-top: -4px;">Login</button></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <div class="modal" id="lmodal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title has-text-centered has-text-weight-bold">Login</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body px-5">
+                <div style="margin: auto; width: 90%;" class="mt-5">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="has-text-weight-semibold">
+                                Username
+                            </label>
+                            <input type="email" id="loginEmail" placeholder="johndoe@gmail.com" class="input is-medium"
+                                required>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="loginPassword" class="has-text-weight-semibold">
+                                Password
+                            </label>
+                            <input id="loginPassword" type="password" class="input is-medium" placeholder="Password"
+                                required>
+                            <button class="button is-ghost has-text-link px-0">Forgot Password?</button>
+                        </div>
+                        <button type="submit" class="button is-fullwidth is-medium  has-text-light"
+                            style="background-color: #8f00cd;">Login</button>
+                    </form>
+                    <hr>
+                    <p class="is-size-5 has-text-centered">or</p>
+                    <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="./assets/google.png"
+                            alt="" style="width: 30px;" class="mr-3"> Continue with Google
+                    </button>
+                </div>
+            </section>
+            <footer class="modal-card-foot" style="width: 100%;">
+                <p class="is-size-5 has-text-centered" style="margin: auto;">Don't have an account? <button
+                        class="button is-ghost has-text-link" style="margin-top: -4px;">Register
+                        Now</button></p>
+            </footer>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
