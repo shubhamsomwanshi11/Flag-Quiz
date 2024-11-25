@@ -13,7 +13,7 @@
     <nav class="navbar py-2 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="../index.html">
-                <h1 class="has-text-centered title">Country Flag Quiz</h1>
+                <h1 class="has-text-centered title has-text-black">Country Flag Quiz</h1>
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -27,19 +27,32 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start mt-2 has-text-weight-bold">
-                <a href="../index.html" class="navbar-item  customelem">
+                <a href="../index.html" class="has-text-black navbar-item  customelem">
                     Home
                 </a>
 
-                <a href="FlagQuiz.html" class="navbar-item customelem active">
+                <a href="FlagQuiz.html" class="has-text-black navbar-item customelem">
                     Flag Quiz
                 </a>
-                <a href="CountryQuiz.html" class="navbar-item customelem">
+                <a href="CountryQuiz.html" class="has-text-black navbar-item customelem">
                     Country Quiz
                 </a>
-                <a href="Library.html" class="navbar-item customelem">
+                <a href="Library.html" class="has-text-black navbar-item customelem">
                     Library
                 </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons" id="normal">
+                        <a class="button is-link is-outlined" id="register">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" id="login">
+                            Log in
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -173,6 +186,12 @@
             <path
                 d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
         </svg>
+
+        <svg id="logoutIC" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#830a25">
+            <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
+        </svg>
     </div>
     <footer class="footer pt-2 pb-2 has-background-link-light">
         <hr />
@@ -211,8 +230,104 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="rmodal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title has-text-centered has-text-weight-bold">Register</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label for="name" class="has-text-weight-semibold">
+                            Name
+                        </label>
+                        <input type="text" id="name" placeholder="John Doe" class="input is-medium" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="has-text-weight-semibold">
+                            Enter your Mail
+                        </label>
+                        <input type="email" id="email" placeholder="johndoe@gmail.com" class="input is-medium" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="has-text-weight-semibold">
+                            Password
+                        </label>
+                        <input id="password" type="password" class="input is-medium" placeholder="Password" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="password" class="has-text-weight-semibold">
+                            Confirm Password
+                        </label>
+                        <input id="confirmPassword" type="password" class="input is-medium" placeholder="Password"
+                            required>
+                    </div>
+                    <button type="submit" class="button is-fullwidth is-medium  has-text-light"
+                        style="background-color: #8f00cd;">Register</button>
+                </form>
+                <hr>
+                <p class="is-size-5 has-text-centered">or</p>
+                <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="./assets/google.png"
+                        alt="" style="width: 30px;" class="mr-3"> Continue with Google </button>
+            </section>
+            <footer class="modal-card-foot">
+                <p class="is-size-5 has-text-centered" style="margin: auto;">Already have an account? <button
+                        class="button is-ghost has-text-link" style="margin-top: -4px;">Login</button></p>
+            </footer>
+        </div>
+    </div>
+    <div class="modal" id="lmodal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title has-text-centered has-text-weight-bold">Login</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body px-5">
+                <div style="margin: auto; width: 90%;" class="mt-5">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="has-text-weight-semibold">
+                                Username
+                            </label>
+                            <input type="email" id="loginEmail" placeholder="johndoe@gmail.com" class="input is-medium"
+                                required>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="loginPassword" class="has-text-weight-semibold">
+                                Password
+                            </label>
+                            <input id="loginPassword" type="password" class="input is-medium" placeholder="Password"
+                                required>
+                            <button class="button is-ghost has-text-link px-0">Forgot Password?</button>
+                        </div>
+                        <button type="submit" class="button is-fullwidth is-medium  has-text-light"
+                            style="background-color: #8f00cd;">Login</button>
+                    </form>
+                    <hr>
+                    <p class="is-size-5 has-text-centered">or</p>
+                    <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="./assets/google.png"
+                            alt="" style="width: 30px;" class="mr-3"> Continue with Google
+                    </button>
+                </div>
+            </section>
+            <footer class="modal-card-foot" style="width: 100%;">
+                <p class="is-size-5 has-text-centered" style="margin: auto;">Don't have an account? <button
+                        class="button is-ghost has-text-link" style="margin-top: -4px;">Register
+                        Now</button></p>
+            </footer>
+        </div>
+    </div>
 </body>
 
 <script src="../js/FlagQuiz.js"></script>
+<script type="module" src="../js/Login.js"></script>
 
 </html>

@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <nav class="navbar py-2 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar py-1 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-                <h1 class="has-text-centered title">Country Flag Quiz</h1>
+                <h1 class="has-text-centered title has-text-black">Country Flag Quiz</h1>
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -28,144 +28,152 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start mt-2 has-text-weight-bold">
-                <a href="index.html" class="navbar-item  customelem active">
+                <a href="index.html" class="has-text-black navbar-item  customelem">
                     Home
                 </a>
 
-                <a href="pages/FlagQuiz.html" class="navbar-item customelem">
+                <a href="pages/FlagQuiz.html" class="has-text-black navbar-item customelem">
                     Flag Quiz
                 </a>
-                <a href="pages/CountryQuiz.html" class="navbar-item customelem">
+                <a href="pages/CountryQuiz.html" class="has-text-black navbar-item customelem">
                     Country Quiz
                 </a>
-                <a href="pages/Library.html" class="navbar-item customelem">
+                <a href="pages/Library.html" class="has-text-black navbar-item customelem">
                     Library
+                </a>
+                <a href="pages/CreateQuiz.html" class="has-text-black navbar-item customelem">
+                    Create Quiz
                 </a>
             </div>
 
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-link is-outlined" id="register">
+
+                    <div id="normal">
+                        <a class="button mx-1 is-link is-outlined" id="register">
                             <strong>Sign up</strong>
                         </a>
                         <a class="button is-light" id="login">
                             Log in
                         </a>
                     </div>
+                    <a class="button is-light is-danger is-rounded is-hidden" id="logoutBtn">
+                        Logout
+                        <svg class="ml-2 mt-1" height="20px" width="20px">
+                            <use href='#logoutIC' />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
-    <section class="section has-background-link-light">
-        <div class="contianer mt-5">
+    <section class="section has-background-link-light" style="margin-top: 40px;">
+        <div class="contianer">
             <!-- Main Box -->
-            <div class="is-flex is-justify-content-center is-align-items-center">
-                <div class="box mt-5 mainbox has-background-link">
-                    <div class="columns is-multiline">
-                        <div class="column is-6">
-                            <div class="card gamecard has-text-centered">
-                                <div class="card-content">
-                                    <figure class="image is-128x128" style="margin: auto;">
-                                        <img src="./assets/quiz.png" alt="Placeholder image" />
-                                    </figure>
-                                    <p class="is-size-4 has-text-light has-text-weight-bold">
-                                        Select The Flag
-                                    </p>
-                                    <p class="has-text-light">A country name will be displayed along with four flag
-                                        choices. Select the correct
-                                        option to test your knowledge!</p>
-                                    <a href="./pages/FlagQuiz.html" class="button mt-3 is-rounded is-warning">
-                                        Play Now <svg class="svgicon ml-1">
-                                            <use href="#playIC" />
-                                        </svg>
-                                    </a>
-                                </div>
+            <div class="box mt-5 mainbox has-background-link">
+                <div class="columns is-multiline">
+                    <div class="column is-6">
+                        <div class="card gamecard has-text-centered">
+                            <div class="card-content">
+                                <figure class="image is-128x128" style="margin: auto;">
+                                    <img src="./assets/quiz.png" alt="Placeholder image" />
+                                </figure>
+                                <p class="is-size-4 has-text-light has-text-weight-bold">
+                                    Select The Flag
+                                </p>
+                                <p class="has-text-light">A country name will be displayed along with four flag
+                                    choices. Select the correct
+                                    option to test your knowledge!</p>
+                                <a href="./pages/FlagQuiz.html" class="button mt-3 is-rounded is-warning">
+                                    Play Now <svg class="svgicon ml-1">
+                                        <use href="#playIC" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
-                        <div class="column is-6">
-                            <div class="card gamecard has-text-centered">
-                                <div class="card-content">
-                                    <figure class="image is-128x128" style="margin: auto;">
-                                        <img src="./assets/quiz.png" alt="Placeholder image" />
-                                    </figure>
-                                    <p class="is-size-4 has-text-light has-text-weight-bold">
-                                        Name The Country
-                                    </p>
+                    </div>
+                    <div class="column is-6">
+                        <div class="card gamecard has-text-centered">
+                            <div class="card-content">
+                                <figure class="image is-128x128" style="margin: auto;">
+                                    <img src="./assets/quiz.png" alt="Placeholder image" />
+                                </figure>
+                                <p class="is-size-4 has-text-light has-text-weight-bold">
+                                    Name The Country
+                                </p>
 
-                                    <p class="has-text-light">A flag image will be displayed along with four answer
-                                        choices. Select the correct
-                                        option to test your knowledge!</p>
-                                    <a href="./pages/CountryQuiz.html" class="button mt-3 is-rounded is-warning">
-                                        Play Now <svg class="svgicon ml-1">
-                                            <use href="#playIC" />
-                                        </svg>
-                                    </a>
-                                </div>
+                                <p class="has-text-light">A flag image will be displayed along with four answer
+                                    choices. Select the correct
+                                    option to test your knowledge!</p>
+                                <a href="./pages/CountryQuiz.html" class="button mt-3 is-rounded is-warning">
+                                    Play Now <svg class="svgicon ml-1">
+                                        <use href="#playIC" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
-                        <div class="column is-6">
-                            <div class="card gamecard has-text-centered">
-                                <div class="card-content">
-                                    <figure class="image is-128x128" style="margin: auto;">
-                                        <img src="./assets/Book.png" alt="Placeholder image" />
-                                    </figure>
-                                    <p class="is-size-4 has-text-light has-text-weight-bold">
-                                        Library
-                                    </p>
+                    </div>
+                    <div class="column is-6">
+                        <div class="card gamecard has-text-centered">
+                            <div class="card-content">
+                                <figure class="image is-128x128" style="margin: auto;">
+                                    <img src="./assets/Book.png" alt="Placeholder image" />
+                                </figure>
+                                <p class="is-size-4 has-text-light has-text-weight-bold">
+                                    Library
+                                </p>
 
-                                    <p class="has-text-light">
-                                        Explore about world flags, first learn, and then test
-                                        your knowledge through quiz.
-                                    </p>
+                                <p class="has-text-light">
+                                    Explore about world flags, first learn, and then test
+                                    your knowledge through quiz.
+                                </p>
 
 
-                                    <a href="./pages/Library.html" class="button mt-3 is-warning is-rounded">Explore
-                                        <svg class="svgicon ml-1">
-                                            <use href="#arrowIC" />
-                                        </svg></a>
-                                </div>
+                                <a href="./pages/Library.html" class="button mt-3 is-warning is-rounded">Explore
+                                    <svg class="svgicon ml-1">
+                                        <use href="#arrowIC" />
+                                    </svg></a>
                             </div>
                         </div>
-                        <div class="column is-6">
-                            <div class="card gamecard has-text-centered">
-                                <div class="is-flex is-justify-content-center" style="width: 100%;">
-                                    <div class="has-text-centered mx-3">
-                                        <figure class="image is-128x128" style="margin: auto;">
-                                            <img src="./assets/start.png" alt="Placeholder image">
-                                        </figure>
-                                        <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                            style="margin-top: -40px;"><span id="highestScoreHard"></span></h2>
-                                        <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                            Hard Highest
-                                        </p>
-                                    </div>
-                                    <div class="has-text-centered mx-3">
-                                        <figure class="image is-128x128" style="margin: auto;">
-                                            <img src="./assets/silver.png" alt="Placeholder image">
-                                        </figure>
-                                        <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                            style="margin-top: -40px;"><span id="highestScoreMedium"></span> </h2>
-                                        <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                            Medium Highest
-                                        </p>
-                                    </div>
-                                    <div class="has-text-centered mx-3">
-                                        <figure class="image is-128x128" style="margin: auto;">
-                                            <img src="./assets/bronze.png" alt="Placeholder image">
-                                        </figure>
-                                        <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                            style="margin-top: -40px;"><span id="highestScoreEasy"></span></h2>
-                                        <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                            Easy Highest
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <p class="has-text-light">Discover fascinating facts about world flags, play now,
-                                        and aim for the highest score!
+                    </div>
+                    <div class="column is-6">
+                        <div class="card gamecard has-text-centered">
+                            <div class="columns mt-2">
+                                <div class="column  has-text-centered mx-3">
+                                    <figure class="image is-128x128" style="margin: auto;">
+                                        <img src="./assets/start.png" alt="Placeholder image">
+                                    </figure>
+                                    <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
+                                        style="margin-top: -40px;"><span id="highestScoreHard"></span></h2>
+                                    <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
+                                        Hard Highest
                                     </p>
                                 </div>
+                                <div class="column has-text-centered mx-3">
+                                    <figure class="image is-128x128" style="margin: auto;">
+                                        <img src="./assets/silver.png" alt="Placeholder image">
+                                    </figure>
+                                    <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
+                                        style="margin-top: -40px;"><span id="highestScoreMedium"></span> </h2>
+                                    <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
+                                        Medium Highest
+                                    </p>
+                                </div>
+                                <div class="column has-text-centered mx-3">
+                                    <figure class="image is-128x128" style="margin: auto;">
+                                        <img src="./assets/bronze.png" alt="Placeholder image">
+                                    </figure>
+                                    <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
+                                        style="margin-top: -40px;"><span id="highestScoreEasy"></span></h2>
+                                    <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
+                                        Easy Highest
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="has-text-light">Discover fascinating facts about world flags, play now,
+                                    and aim for the highest score!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -175,16 +183,16 @@
     </section>
     <footer class="footer pt-2 pb-2 has-background-link-light">
         <hr />
-        <div class="content">
-            <h1 class="has-text-centered">Country Flag Quiz</h1>
+        <div class="content has-text-black">
+            <h1 class="has-text-centered has-text-black">Country Flag Quiz</h1>
 
-            <h2>Why play this game?</h2>
+            <h2 class="has-text-black">Why play this game?</h2>
             <p class="is-size-5">
                 The Country Flag Quiz helps improve your geographical knowledge, enhances
                 memory retention, and is a fun way to learn about different countries and cultures. It's perfect for
                 students, trivia enthusiasts, and anyone who loves exploring the world!
             </p>
-            <h2>Advantages:</h2>
+            <h2 class="has-text-black">Advantages:</h2>
             <p>
             <ul style="list-style-type: disc; padding-left: 1.5rem;">
                 <li class="is-size-5">Interactive and educational.</li>
@@ -193,8 +201,8 @@
                 <li class="is-size-5">Encourages competitive learning with friends and family.</li>
             </ul>
             </p>
-
-            <div class="has-text-right is-size-5">
+            <hr />
+            <div class="has-text-centered has-text-weight-semibold my-5  is-size-5">
                 <a class="mx-2" href="index.html">
                     Home
                 </a>
@@ -229,11 +237,15 @@
         <svg id="arrowIC" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF">
             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
         </svg>
+
+        <svg id="logoutIC" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#830a25">
+            <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
+        </svg>
     </div>
 
-
-    <!-- Modal -->
-    <!-- Register -->
+    <!-- Modals -->
     <div class="modal" id="rmodal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -284,8 +296,6 @@
             </footer>
         </div>
     </div>
-
-    <!-- Login -->
     <div class="modal" id="lmodal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -330,7 +340,7 @@
         </div>
     </div>
 
-
+    <script type="module" src="./js/Login.js"></script>
 
 </body>
 
