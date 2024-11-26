@@ -130,5 +130,17 @@ svg {
 
 .tableContainer::-webkit-scrollbar-thumb:hover {
     background-color: #555;
+}
 
+.quizbox {
+    margin: auto;
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust based on your breakpoint */
+    .quizbox {
+        width: 100%;
+    }
 }

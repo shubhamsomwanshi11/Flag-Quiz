@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar py-2 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar py-1 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="../index.html">
                 <h1 class="has-text-centered title has-text-black">Country Flag Quiz</h1>
@@ -40,18 +40,27 @@
                 <a href="Library.html" class="has-text-black navbar-item customelem">
                     Library
                 </a>
+                <a href="CreateQuiz.html" id="createQ" class="has-text-black navbar-item customelem is-hidden">
+                    Create Quiz
+                </a>
             </div>
 
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <div class="buttons" id="normal">
-                        <a class="button is-link is-outlined" id="register">
+                    <div id="normal">
+                        <a class="button mx-1 is-link is-outlined" id="register">
                             <strong>Sign up</strong>
                         </a>
                         <a class="button is-light" id="login">
                             Log in
                         </a>
                     </div>
+                    <a class="button is-light is-danger is-rounded is-hidden" id="logoutBtn">
+                        Logout
+                        <svg class="ml-2 mt-1" height="20px" width="20px">
+                            <use href='#logoutIC' />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

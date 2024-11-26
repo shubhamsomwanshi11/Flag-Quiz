@@ -84,6 +84,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
         await setDoc(doc(db, "users", user.uid), { name, email });
         await setAuthToken(user); // Set authentication token
         alert("Registration successful!");
+
     } catch (error) {
         alert(`Error: ${error.message}`);
     }
@@ -102,6 +103,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
 
         await setAuthToken(user); // Set authentication token
         alert("Login successful!");
+        document.getElementById('lmodal').querySelector('.delete').click();
         setButtons();
     } catch (error) {
         alert(`Error: ${error.message}`);
@@ -125,6 +127,7 @@ const googleLogin = async () => {
 
         await setAuthToken(user); // Set authentication token
         alert("Login successful with Google!");
+        document.getElementById('lmodal').querySelector('.delete').click();
         setButtons();
     } catch (error) {
         alert(`Error: ${error.message}`);
@@ -154,17 +157,22 @@ document.getElementById('logoutBtn').addEventListener('click', logout);
 
 
 async function setButtons() {
+    console.log("called");
+
     try {
         const isValid = await validateAuthToken(); // Check if the token is valid
         const buttonContainer = document.getElementById('normal'); // Container for login/register buttons
         const logoutBtn = document.getElementById('logoutBtn'); // Logout button
+        const createQ = document.getElementById('createQ');
 
         if (isValid) {
             buttonContainer.classList.add('is-hidden');
             logoutBtn.classList.remove('is-hidden');
+            createQ.classList.remove('is-hidden');
         } else {
             buttonContainer.classList.remove('is-hidden');
             logoutBtn.classList.add('is-hidden');
+            createQ.classList.add('is-hidden');
         }
     } catch (error) {
         document.getElementById('normal').classList.remove('is-hidden');

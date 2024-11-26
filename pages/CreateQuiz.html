@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar py-1 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
+            <a class="navbar-item" href="../index.html">
                 <h1 class="has-text-centered title has-text-black">Country Flag Quiz</h1>
             </a>
 
@@ -27,27 +27,26 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start mt-2 has-text-weight-bold">
-                <a href="index.html" class="has-text-black navbar-item  customelem">
+                <a href="../index.html" class="has-text-black navbar-item  customelem">
                     Home
                 </a>
 
-                <a href="pages/FlagQuiz.html" class="has-text-black navbar-item customelem">
+                <a href="FlagQuiz.html" class="has-text-black navbar-item customelem">
                     Flag Quiz
                 </a>
-                <a href="pages/CountryQuiz.html" class="has-text-black navbar-item customelem">
+                <a href="CountryQuiz.html" class="has-text-black navbar-item customelem">
                     Country Quiz
                 </a>
-                <a href="pages/Library.html" class="has-text-black navbar-item customelem">
+                <a href="Library.html" class="has-text-black navbar-item customelem">
                     Library
                 </a>
-                <a href="pages/CreateQuiz.html" class="has-text-black navbar-item customelem">
+                <a href="CreateQuiz.html" id="createQ" class="has-text-black navbar-item customelem is-hidden">
                     Create Quiz
                 </a>
             </div>
 
             <div class="navbar-end">
                 <div class="navbar-item">
-
                     <div id="normal">
                         <a class="button mx-1 is-link is-outlined" id="register">
                             <strong>Sign up</strong>
@@ -78,62 +77,62 @@
                 <hr />
 
                 <div id="startArea">
+                    <h2 class="is-size-4 has-text-weight-semibold">Previous Quizes</h2>
+                    <div class="tableContainer">
+                        <table class="table is-fullwidth is-striped mt-2 mx-3 is-bordered" id="quizzes">
+                            <thead>
+                                <tr>
+                                    <th class="has-text-centered">Quiz Name</th>
+                                    <th class="has-text-centered">Link</th>
+                                    <th class="has-text-centered">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
                     <form id="quizForm">
+                        <div class="mt-3  mb-3">
+                            <label class=" mx-1 mb-2 mt-1 has-text-light is-size-5" for="quizName">
+                                Quiz Name :
+                            </label>
 
-                        <h2 class="is-size-4 has-text-weight-semibold">Previous Quizes</h2>
-                        <div class="tableContainer">
-                            <table class="table is-fullwidth is-striped mt-2 mx-3 is-bordered" id="quizzes">
-                                <thead>
-                                    <tr>
-                                        <th class="has-text-centered">Quiz Name</th>
-                                        <th class="has-text-centered">Participants</th>
-                                        <th class="has-text-centered">Average Score</th>
-                                        <th class="has-text-centered">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="has-text-centered">
-                                        <td>World Flags Quiz</td>
-                                        <td>30</td>
-                                        <td>58</td>
-                                        <td><button class="button is-danger is-small">Delete</button></td>
-                                    </tr>
-                                    <tr class="has-text-centered">
-                                        <td>Asian countries Quiz</td>
-                                        <td>24</td>
-                                        <td>60</td>
-                                        <td><button class="button is-danger is-small">Delete</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <input type="text" style="width: 100%;" id="quizName" class="input" required>
                         </div>
-                        <div class="columns">
-                            <div class="mt-3 mr-1 mx-3 column">
-                                <label class=" mx-1 mb-2 mt-1 has-text-light is-size-5" for="quizName">
-                                    Quiz Name :
+                        <div class="mt-3  mb-3">
+                            <label class=" mx-1 mb-2 mt-1 has-text-light is-size-5" for="organiserName">
+                                Organiser Name :
+                            </label>
+
+                            <input type="text" style="width: 100%;" id="organiserName" class="input" required>
+                        </div>
+                        <div class="columns ">
+                            <div class="column">
+                                <label class="mt-1 has-text-light is-size-5" for="noOfQuestions">
+                                    No of questions :
                                 </label>
 
-                                <input type="text" style="width: 100%;" id="quizName" class="input">
+                                <input type="number" id="noOfQuestions" min="10" max="150" class="input" required>
                             </div>
 
-                            <div class="has-text-centered column mt-3">
-                                <label class="mt-1 has-text-light has-text-weight-semibold is-size-5" for="quizTime">
+                            <div class="column">
+                                <label class="mt-1 has-text-light  is-size-5" for="quizTime">
                                     Time (in minutes) :
                                 </label>
 
-                                <input type="number" id="quizTime" min="10" max="150" class="input"
-                                    style="width: auto;">
+                                <input type="number" id="quizTime" min="10" max="150" class="input" required>
                             </div>
                         </div>
 
 
                         <div class="columns m-auto">
-                            <div class="has-text-centered mt-3 column">
-                                <label class="is-size-5 mr-2 mt-3 mx has-text-weight-semibold has-text-light">Select
+                            <div class="has-text-centered mt-3 is-5 column">
+                                <label for="continent"
+                                    class="is-size-5 mr-2 mt-3 mx has-text-weight-semibold has-text-light">
                                     Continent:
                                 </label>
                                 <div class="select is-success is-rounded">
-                                    <select class="has-text-weight-semibold" id="continent">
+                                    <select class="has-text-weight-semibold" id="continent" required>
                                         <option value="All">All</option>
                                         <option value="Africa">Africa</option>
                                         <option value="Asia">Asia</option>
@@ -144,22 +143,23 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="column has-text-right is-flex is-justify-content-center mt-3">
-                                <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Difficulty Level:
-                                </p>
+                            <div class="column has-text-right mt-3">
+                                <label for="level"
+                                    class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Level:
+                                </label>
                                 <div class="select is-success is-rounded">
-                                    <select class="has-text-weight-semibold" value="Easy" id="level">
+                                    <select class="has-text-weight-semibold" value="Easy" id="level" required>
                                         <option value="Easy">Easy</option>
                                         <option value="Medium">Medium</option>
                                         <option value="Hard">Hard</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="column has-text-right is-flex is-justify-content-center mt-3">
-                                <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Quiz Type:
-                                </p>
+                            <div class="column has-text-right mt-3">
+                                <label class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Type:
+                                </label>
                                 <div class="select is-success is-rounded">
-                                    <select class="has-text-weight-semibold" value="Flag" id="type">
+                                    <select class="has-text-weight-semibold" value="Flag" id="type" required>
                                         <option value="Flag">Flag</option>
                                         <option value="Hard">Hard</option>
                                     </select>
@@ -175,7 +175,7 @@
                         </div>
                     </form>
 
-                    <div class="quizScoreArea">
+                    <!-- <div class="quizScoreArea"> 
                         <hr />
 
                         <h2 class="has-text-centered is-size-3 has-text-weight-semibold mb-3">Quiz Results</h2>
@@ -201,7 +201,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

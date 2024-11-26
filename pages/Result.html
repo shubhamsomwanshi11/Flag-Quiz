@@ -65,137 +65,40 @@
             </div>
         </div>
     </nav>
+
     <section class="section mt-5 has-background-link-light is is-flex is-align-items-center">
         <div class="container pb-5 mt-5 mb-5">
-            <div class="box has-background-link">
-                <h2 class="has-text-centered is-size-3 has-text-weight-bold has-text-light">Name the Flag</h2>
-                <p class="has-text-centered has-text-light is-size-5">
-                    Country name will be displayed along with four answer choices.
-                    Select the correct option to test your knowledge!
-                </p>
+            <div class="box has-background-link quizbox">
+                <h2 class="has-text-centered is-size-3 has-text-weight-bold has-text-light">View Results</h2>
                 <hr />
 
                 <div id="startArea">
-                    <div class="is-flex is-justify-content-center" style="width: 100%;">
-                        <div class="has-text-centered mx-3">
-                            <figure class="image is-128x128" style="margin: auto;">
-                                <img src="../assets/start.png" alt="Placeholder image">
-                            </figure>
-                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                style="margin-top: -40px;"><span id="highestScoreHard"></span></h2>
-                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                Hard Highest
-                            </p>
-                        </div>
-                        <div class="has-text-centered mx-3">
-                            <figure class="image is-128x128" style="margin: auto;">
-                                <img src="../assets/silver.png" alt="Placeholder image">
-                            </figure>
-                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                style="margin-top: -40px;"><span id="highestScoreMedium"></span> </h2>
-                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                Medium Highest
-                            </p>
-                        </div>
-                        <div class="has-text-centered mx-3">
-                            <figure class="image is-128x128" style="margin: auto;">
-                                <img src="../assets/bronze.png" alt="Placeholder image">
-                            </figure>
-                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                style="margin-top: -40px;"><span id="highestScoreEasy"></span></h2>
-                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                Easy Highest
-                            </p>
+                    <div class="quizScoreArea">
+                        <h2 class="has-text-centered is-size-3 has-text-weight-semibold mb-3" id="quizName">Asia Flags
+                            Quiz</h2>
+                        <div class="tableContainer">
+                            <table class="table is-striped is-bordered is-fullwidth m-auto" id="results">
+                                <thead>
+                                    <tr>
+                                        <th class="has-text-centered">Name</th>
+                                        <th class="has-text-centered">Email</th>
+                                        <th class="has-text-centered">Timestamp</th>
+                                        <th class="has-text-centered">Time Taken</th>
+                                        <th class="has-text-centered">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="has-text-centered">
+                                    <!-- Dynamic rows will be inserted here -->
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <hr style="width: 60%; margin: auto;" class="my-5" />
-                    <div class="has-text-right is-flex is-justify-content-center mt-3">
-                        <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Select Continent: </p>
-                        <div class="select is-success is-rounded">
-                            <select class="has-text-weight-semibold" id="continent">
-                                <option value="All">All</option>
-                                <option value="Africa">Africa</option>
-                                <option value="Asia">Asia</option>
-                                <option value="Europe">Europe</option>
-                                <option value="North America">North America</option>
-                                <option value="South America">South America</option>
-                                <option value="Oceania">Oceania</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="has-text-right is-flex is-justify-content-center mt-3">
-                        <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Difficulty Level: </p>
-                        <div class="select is-success is-rounded">
-                            <select class="has-text-weight-semibold" value="Easy" id="level">
-                                <option value="Easy">Easy</option>
-                                <option value="Medium">Medium</option>
-                                <option value="Hard">Hard</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="has-text-centered mt-3">
-                        <label class="checkbox has-text-light has-text-weight-semibold is-size-5">
-                            <input type="checkbox" id="timedQuiz" checked>
-                            Timed Quiz
-                        </label>
-                    </div>
-
-                    <div class="has-text-centered mt-5">
-                        <button id="playNowBtn" class="button quizbtn is-rounded is-large is-warning has-text-light">
-                            Play Now <svg class="svgicon ml-2 mt-1">
-                                <use href="#playIC" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Game Area -->
-                <div id="gameArea" class="box" style="display: none;">
-                    <div class="is-flex is-justify-content-space-between is-align-items-center mb-5">
-                        <p class="is-size-5 has-text-weight-semibold">
-                            <span class="has-text-grey">Time Remaining:</span>
-                            <span id="remainingTime" class="has-text-danger has-text-weight-bold"></span>
-                        </p>
-                        <p class="is-size-3 has-text-weight-semibold">
-                            <span class="has-text-grey">Question No</span>
-                            <span id="questionnumber" class="has-text-weight-bold"></span>
-                        </p>
-                        <p class="is-size-5 has-text-weight-bold">
-                            <span class="has-text-grey">Score:</span>
-                            <span id="score" class="has-text-success">0</span>
-                        </p>
-                    </div>
-
-                    <div id="question" class="has-text-centered">
-
-                    </div>
-
-                    <div class="columns is-multiline is-centered mt-5" id="optionsContainer">
-                        <!-- Options will be dynamically inserted here -->
-                    </div>
-
-                    <div class="has-text-right is-flex is-justify-content-center">
-                        <button class="button mx-1 has-text-light has-text-weight-bold is-primary" id="nextBtn"
-                            style="display: none;">
-                            Next
-                        </button>
-                        <button class="button mx-1 has-text-light has-text-weight-bold is-danger" id="submitBtn">
-                            Submit
-                        </button>
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
-    <div style="display: none;">
-        <svg id="playIC" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF">
-            <path
-                d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-        </svg>
 
+    <div style="display: none;">
         <svg id="logoutIC" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
             fill="#830a25">
             <path
@@ -335,8 +238,7 @@
         </div>
     </div>
 </body>
-
-<script src="../js/FlagQuiz.js"></script>
+<script type="module" src="../js/Result.js"></script>
 <script type="module" src="../js/Login.js"></script>
 
 </html>

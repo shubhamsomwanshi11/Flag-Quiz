@@ -8,7 +8,7 @@ import {
     deleteDoc,
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js"; // Firestore methods
-import { app, db, validateAuthToken } from './Login.js'; // Firebase app setup and validation
+import { db, validateAuthToken } from './Login.js'; // Firebase app setup and validation
 
 // Handle Form Submission
 document.getElementById('quizForm').addEventListener('submit', async (e) => {
@@ -16,14 +16,16 @@ document.getElementById('quizForm').addEventListener('submit', async (e) => {
 
     // Get Form Values
     const quizName = document.getElementById('quizName').value.trim();
+    const noOfQuestions = parseInt(document.getElementById('noOfQuestions').value.trim());
     const quizTime = parseInt(document.getElementById('quizTime').value.trim());
     const continent = document.getElementById('continent').value;
     const difficultyLevel = document.getElementById('level').value;
     const quizType = document.getElementById('type').value;
+    const organiserName = document.getElementById('organiserName').value.trim();
 
     // Validate Input
-    if (!quizName || isNaN(quizTime)) {
-        alert("Please provide valid input for quiz name and time.");
+    if (!quizName || isNaN(noOfQuestions) || isNaN(quizTime) || !organiserName) {
+        alert("Please provide valid input for all fields.");
         return;
     }
 
@@ -44,12 +46,14 @@ document.getElementById('quizForm').addEventListener('submit', async (e) => {
         const quizData = {
             quizId,
             quizName,
+            noOfQuestions,
             quizTime,
             continent,
             difficultyLevel,
             quizType,
+            organiserName,
             createdBy: email,
-            createdAt: serverTimestamp(),
+            createdAt: serverTimestamp()
         };
 
         // Save to Firestore
@@ -96,10 +100,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             row.innerHTML = `
                 <td>${quiz.quizName}</td>
-                <td>${quiz.participants || 0}</td>
-                <td>${quiz.averageScore || 0}</td>
-                <td>
-                    <button class="button is-danger is-small" data-id="${quiz.id}">Delete</button>
+                <td><a href="${window.location.origin}/pages/Quiz.html#${quiz.quizId}" target="_blank">${window.location.origin}/pages/Quiz.html#${quiz.quizId}</a></td>
+                <td class="buttons">
+                    <button class="button is-danger is-small delquiz" data-id="${quiz.id}">Delete</button>
+                    <button class="button is-primary is-small"><a class="has-text-black" href="${window.location.origin}/pages/Result.html#${quiz.quizId}#${quiz.quizName}" target="_blank">View Results</a></button>
                 </td>
             `;
 
@@ -107,7 +111,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
 
         // Add delete functionality
-        document.querySelectorAll('.button.is-danger').forEach((button) => {
+        document.querySelectorAll('.delquiz').forEach((button) => {
             button.addEventListener('click', async (e) => {
                 const quizId = e.target.getAttribute('data-id');
                 if (confirm("Are you sure you want to delete this quiz?")) {

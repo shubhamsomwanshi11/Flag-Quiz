@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar py-1 has-background-link-light is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="../index.html">
+            <a class="navbar-item" href="index.html">
                 <h1 class="has-text-centered title has-text-black">Country Flag Quiz</h1>
             </a>
 
@@ -40,13 +40,14 @@
                 <a href="Library.html" class="has-text-black navbar-item customelem">
                     Library
                 </a>
-                <a href="CreateQuiz.html" id="createQ" class="has-text-black navbar-item customelem is-hidden">
+                <a href="CreateQuiz.html" class="has-text-black navbar-item customelem is-hidden" id="createQ">
                     Create Quiz
                 </a>
             </div>
 
             <div class="navbar-end">
                 <div class="navbar-item">
+
                     <div id="normal">
                         <a class="button mx-1 is-link is-outlined" id="register">
                             <strong>Sign up</strong>
@@ -65,89 +66,78 @@
             </div>
         </div>
     </nav>
+
     <section class="section mt-5 has-background-link-light is is-flex is-align-items-center">
         <div class="container pb-5 mt-5 mb-5">
-            <div class="box has-background-link">
-                <h2 class="has-text-centered is-size-3 has-text-weight-bold has-text-light">Name the Flag</h2>
+            <div class="box has-background-link quizbox">
+                <h2 class="has-text-centered is-size-3 has-text-weight-bold has-text-light" id="quizName">Asian Flags
+                    Quiz</h2>
                 <p class="has-text-centered has-text-light is-size-5">
-                    Country name will be displayed along with four answer choices.
-                    Select the correct option to test your knowledge!
+                    Play your best, test your knowledge, and achieve a high score <strong>Good Luck!</strong>
                 </p>
                 <hr />
 
                 <div id="startArea">
-                    <div class="is-flex is-justify-content-center" style="width: 100%;">
-                        <div class="has-text-centered mx-3">
-                            <figure class="image is-128x128" style="margin: auto;">
-                                <img src="../assets/start.png" alt="Placeholder image">
-                            </figure>
-                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                style="margin-top: -40px;"><span id="highestScoreHard"></span></h2>
-                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                Hard Highest
-                            </p>
-                        </div>
-                        <div class="has-text-centered mx-3">
-                            <figure class="image is-128x128" style="margin: auto;">
-                                <img src="../assets/silver.png" alt="Placeholder image">
-                            </figure>
-                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                style="margin-top: -40px;"><span id="highestScoreMedium"></span> </h2>
-                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                Medium Highest
-                            </p>
-                        </div>
-                        <div class="has-text-centered mx-3">
-                            <figure class="image is-128x128" style="margin: auto;">
-                                <img src="../assets/bronze.png" alt="Placeholder image">
-                            </figure>
-                            <h2 class="is-size-1 has-text-centered has-text-grey-lighter has-text-weight-bold  glowing-text"
-                                style="margin-top: -40px;"><span id="highestScoreEasy"></span></h2>
-                            <p class="is-size-4 has-text-light has-text-centered  has-text-weight-bold">
-                                Easy Highest
-                            </p>
-                        </div>
-                    </div>
-                    <hr style="width: 60%; margin: auto;" class="my-5" />
-                    <div class="has-text-right is-flex is-justify-content-center mt-3">
-                        <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Select Continent: </p>
-                        <div class="select is-success is-rounded">
-                            <select class="has-text-weight-semibold" id="continent">
-                                <option value="All">All</option>
-                                <option value="Africa">Africa</option>
-                                <option value="Asia">Asia</option>
-                                <option value="Europe">Europe</option>
-                                <option value="North America">North America</option>
-                                <option value="South America">South America</option>
-                                <option value="Oceania">Oceania</option>
-                            </select>
-                        </div>
-                    </div>
+                    <div class="mt-5">
+                        <form id="quizForm">
+                            <div class="columns is-multiline">
+                                <div class="column is-6">
+                                    <p for="email" class="has-text-weight-semibold is-size-4 mx-1 mb-1">Time : <span
+                                            id="quizTime">30 Minutes</span> </p>
+                                </div>
+                                <div class="column is-6">
+                                    <p for="email" class="has-text-weight-semibold is-size-4 mx-1 mb-1">No of Questions
+                                        : <span id="noOfQuestions">67</span> </p>
+                                </div>
+                                <div class="column is-6">
+                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Created By :
+                                        <span id="organiserName">Shubham Somwanshi</span>
+                                    </p>
+                                </div>
+                                <div class="column is-6">
+                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Quiz Type :
+                                        <span id="quizType">Flag Quiz</span>
+                                    </p>
+                                </div>
+                                <div class="column is-6">
+                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Continent :
+                                        <span id="continent">All</span>
+                                    </p>
+                                </div>
+                                <div class="column is-6">
+                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Difficulty Level
+                                        :
+                                        <span id="difficultyLevel">Easy</span>
+                                    </p>
+                                </div>
 
-                    <div class="has-text-right is-flex is-justify-content-center mt-3">
-                        <p class="is-size-5 mr-2 mt-1 has-text-weight-semibold has-text-light">Difficulty Level: </p>
-                        <div class="select is-success is-rounded">
-                            <select class="has-text-weight-semibold" value="Easy" id="level">
-                                <option value="Easy">Easy</option>
-                                <option value="Medium">Medium</option>
-                                <option value="Hard">Hard</option>
-                            </select>
-                        </div>
-                    </div>
+                                <div class="column is-6">
+                                    <label for="name" class="has-text-weight-semibold mx-1 mb-1">Name : </label>
+                                    <input type="text" id="name" class="input">
+                                </div>
+                                <div class="column is-6">
+                                    <label for="email" class="has-text-weight-semibold mx-1 mb-1">Email : </label>
+                                    <input type="email" id="email" class="input">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="is-size-4 has-text-weight-semibold">Instructions : </h2>
+                                <ul>
+                                    <li>Read each question carefully before answering.</li>
+                                    <li>There are no negative marks for wrong answers.</li>
+                                    <li>Click the "Submit" button after answering all questions.</li>
+                                </ul>
+                            </div>
 
-                    <div class="has-text-centered mt-3">
-                        <label class="checkbox has-text-light has-text-weight-semibold is-size-5">
-                            <input type="checkbox" id="timedQuiz" checked>
-                            Timed Quiz
-                        </label>
-                    </div>
-
-                    <div class="has-text-centered mt-5">
-                        <button id="playNowBtn" class="button quizbtn is-rounded is-large is-warning has-text-light">
-                            Play Now <svg class="svgicon ml-2 mt-1">
-                                <use href="#playIC" />
-                            </svg>
-                        </button>
+                            <div class="has-text-centered">
+                                <button id="playNowBtn"
+                                    class="button has-text-weight-semibold quizbtn is-rounded is-large is-warning has-text-light">
+                                    Start Quiz <svg class="svgicon ml-2 mt-1">
+                                        <use href="#playIC" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
@@ -336,7 +326,7 @@
     </div>
 </body>
 
-<script src="../js/FlagQuiz.js"></script>
+<script type="module" src="../js/Quiz.js"></script>
 <script type="module" src="../js/Login.js"></script>
 
 </html>
