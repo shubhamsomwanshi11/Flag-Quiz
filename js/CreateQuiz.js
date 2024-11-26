@@ -98,14 +98,19 @@ document.addEventListener("DOMContentLoaded", async () => {
             const row = document.createElement('tr');
             row.classList.add('has-text-centered');
 
+            // Get the base path of the current page dynamically
+            const basePath = window.location.pathname.split('/').slice(0, -1).join('/');
+
             row.innerHTML = `
-                <td>${quiz.quizName}</td>
-                <td><a href="${window.location.origin}/pages/Quiz.html#${quiz.quizId}" target="_blank">${window.location.origin}/pages/Quiz.html#${quiz.quizId}</a></td>
-                <td class="buttons">
-                    <button class="button is-danger is-small delquiz" data-id="${quiz.id}">Delete</button>
-                    <button class="button is-primary is-small"><a class="has-text-black" href="${window.location.origin}/pages/Result.html#${quiz.quizId}#${quiz.quizName}" target="_blank">View Results</a></button>
-                </td>
-            `;
+    <td>${quiz.quizName}</td>
+    <td><a href="${window.location.origin}${basePath}/Quiz.html#${quiz.quizId}" target="_blank">${window.location.origin}${basePath}/Quiz.html#${quiz.quizId}</a></td>
+    <td class="buttons">
+        <button class="button is-danger is-small delquiz" data-id="${quiz.id}">Delete</button>
+        <button class="button is-primary is-small"><a class="has-text-black" href="${window.location.origin}${basePath}/Result.html#${quiz.quizId}#${quiz.quizName}" target="_blank">View Results</a></button>
+    </td>
+`;
+
+
 
             tbody.appendChild(row);
         });
