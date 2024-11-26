@@ -30,6 +30,18 @@ register.addEventListener("click", () => rmodal.classList.add('is-active'));
 rmodal.querySelector('.delete').addEventListener('click', () => rmodal.classList.remove('is-active'));
 lmodal.querySelector('.delete').addEventListener('click', () => lmodal.classList.remove('is-active'));
 
+// Get the navbar burger and menu elements
+const navbarBurger = document.querySelector(".navbar-burger");
+const navbarMenu = document.querySelector(".navbar-menu");
+
+// Check for click events on the navbar burger icon
+navbarBurger.addEventListener("click", function () {
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    navbarBurger.classList.toggle("is-active");
+    navbarMenu.classList.toggle("is-active");
+});
+
+
 const setAuthToken = async (user) => {
     const token = await user.getIdToken(); // Get Firebase ID token
     const email = user.email; // Get the user's email
