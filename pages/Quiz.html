@@ -79,70 +79,68 @@
 
                 <div id="startArea">
                     <div class="mt-5">
-                        <form id="quizForm">
-                            <div class="columns is-multiline">
-                                <div class="column is-6">
-                                    <p for="email" class="has-text-weight-semibold is-size-4 mx-1 mb-1">Time : <span
-                                            id="quizTime">30 Minutes</span> </p>
-                                </div>
-                                <div class="column is-6">
-                                    <p for="email" class="has-text-weight-semibold is-size-4 mx-1 mb-1">No of Questions
-                                        : <span id="noOfQuestions">67</span> </p>
-                                </div>
-                                <div class="column is-6">
-                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Created By :
-                                        <span id="organiserName">Shubham Somwanshi</span>
-                                    </p>
-                                </div>
-                                <div class="column is-6">
-                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Quiz Type :
-                                        <span id="quizType">Flag Quiz</span>
-                                    </p>
-                                </div>
-                                <div class="column is-6">
-                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Continent :
-                                        <span id="continent">All</span>
-                                    </p>
-                                </div>
-                                <div class="column is-6">
-                                    <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Difficulty Level
-                                        :
-                                        <span id="difficultyLevel">Easy</span>
-                                    </p>
-                                </div>
-
-                                <div class="column is-6">
-                                    <label for="name" class="has-text-weight-semibold mx-1 mb-1">Name : </label>
-                                    <input type="text" id="name" class="input">
-                                </div>
-                                <div class="column is-6">
-                                    <label for="email" class="has-text-weight-semibold mx-1 mb-1">Email : </label>
-                                    <input type="email" id="email" class="input">
-                                </div>
+                        <div class="columns is-multiline">
+                            <div class="column is-6">
+                                <p for="email" class="has-text-weight-semibold is-size-4 mx-1 mb-1">Time : <span
+                                        id="quizTime"></span> </p>
                             </div>
-                            <div class="content">
-                                <h2 class="is-size-4 has-text-weight-semibold">Instructions : </h2>
-                                <ul>
-                                    <li>Read each question carefully before answering.</li>
-                                    <li>There are no negative marks for wrong answers.</li>
-                                    <li>Click the "Submit" button after answering all questions.</li>
-                                </ul>
+                            <div class="column is-6">
+                                <p for="email" class="has-text-weight-semibold is-size-4 mx-1 mb-1">No of Questions
+                                    : <span id="noOfQuestions"></span> </p>
+                            </div>
+                            <div class="column is-6">
+                                <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Created By :
+                                    <span id="organiserName"></span>
+                                </p>
+                            </div>
+                            <div class="column is-6">
+                                <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Quiz Type :
+                                    <span id="quizType"></span>
+                                </p>
+                            </div>
+                            <div class="column is-6">
+                                <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Continent :
+                                    <span id="continent"></span>
+                                </p>
+                            </div>
+                            <div class="column is-6">
+                                <p for="email" class="has-text-weight-semibold is-size-5 mx-1 mb-1">Difficulty Level
+                                    :
+                                    <span id="difficultyLevel"></span>
+                                </p>
                             </div>
 
-                            <div class="has-text-centered">
-                                <button id="playNowBtn"
-                                    class="button has-text-weight-semibold quizbtn is-rounded is-large is-warning has-text-light">
-                                    Start Quiz <svg class="svgicon ml-2 mt-1">
-                                        <use href="#playIC" />
-                                    </svg>
-                                </button>
+                            <div class="column is-6">
+                                <label for="name" class="has-text-weight-semibold mx-1 mb-1">Name : </label>
+                                <input type="text" id="userName" class="input">
                             </div>
-                        </form>
+                            <div class="column is-6">
+                                <label for="email" class="has-text-weight-semibold mx-1 mb-1">Email : </label>
+                                <input type="email" id="userEmail" class="input">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h2 class="is-size-4 has-text-weight-semibold">Instructions : </h2>
+                            <ul>
+                                <li>Read each question carefully before answering.</li>
+                                <li>There are no negative marks for wrong answers.</li>
+                                <li>Click the "Submit" button after answering all questions.</li>
+                            </ul>
+                        </div>
+
+                        <div class="has-text-centered">
+                            <button id="playNowBtn"
+                                class="button has-text-weight-semibold quizbtn is-rounded is-large is-warning has-text-light">
+                                Start Quiz <svg class="svgicon ml-2 mt-1">
+                                    <use href="#playIC" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Game Area -->
-                <div id="gameArea" class="box" style="display: none;">
+                <div id="gameArea" class="box is-hidden">
                     <div class="is-flex is-justify-content-space-between is-align-items-center mb-5">
                         <p class="is-size-5 has-text-weight-semibold">
                             <span class="has-text-grey">Time Remaining:</span>
@@ -152,15 +150,15 @@
                             <span class="has-text-grey">Question No</span>
                             <span id="questionnumber" class="has-text-weight-bold"></span>
                         </p>
-                        <p class="is-size-5 has-text-weight-bold">
-                            <span class="has-text-grey">Score:</span>
-                            <span id="score" class="has-text-success">0</span>
-                        </p>
                     </div>
 
-                    <div id="question" class="has-text-centered">
+                    <div id="question" class="is-size-5 has-text-centered">
 
                     </div>
+
+                    <figure class="has-text-centered mb-5 mt-3">
+                        <img id="flagImage" loading="lazy" class="flagimg fade-in" alt="Flag Image">
+                    </figure>
 
                     <div class="columns is-multiline is-centered mt-5" id="optionsContainer">
                         <!-- Options will be dynamically inserted here -->
@@ -272,7 +270,7 @@
                 </form>
                 <hr>
                 <p class="is-size-5 has-text-centered">or</p>
-                <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="./assets/google.png"
+                <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="../assets/google.png"
                         alt="" style="width: 30px;" class="mr-3"> Continue with Google </button>
             </section>
             <footer class="modal-card-foot">
@@ -312,7 +310,7 @@
                     </form>
                     <hr>
                     <p class="is-size-5 has-text-centered">or</p>
-                    <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="./assets/google.png"
+                    <button class="googleSignInBtn button is-fullwidth mt-3 is-medium"> <img src="../assets/google.png"
                             alt="" style="width: 30px;" class="mr-3"> Continue with Google
                     </button>
                 </div>
@@ -325,7 +323,7 @@
         </div>
     </div>
 </body>
-
+<img class="loader" src="../assets/loading.gif" alt="">
 <script type="module" src="../js/Quiz.js"></script>
 <script type="module" src="../js/Login.js"></script>
 

@@ -96,7 +96,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
         await setDoc(doc(db, "users", user.uid), { name, email });
         await setAuthToken(user); // Set authentication token
         alert("Registration successful!");
-
+        document.getElementById('rmodal').querySelector('.delete').click();
     } catch (error) {
         alert(`Error: ${error.message}`);
     }
@@ -169,8 +169,6 @@ document.getElementById('logoutBtn').addEventListener('click', logout);
 
 
 async function setButtons() {
-    console.log("called");
-
     try {
         const isValid = await validateAuthToken(); // Check if the token is valid
         const buttonContainer = document.getElementById('normal'); // Container for login/register buttons
@@ -196,4 +194,16 @@ async function setButtons() {
 // Validate Auth Token on Page Load
 setButtons();
 
+const registerOpener = document.querySelector('#rmodal .modal-card-foot .button');
+const loginOpener = document.querySelector('#lmodal .modal-card-foot .button');
+
+registerOpener.addEventListener('click', () => {
+    rmodal.querySelector('.delete').click();
+    login.click();
+});
+
+loginOpener.addEventListener('click', () => {
+    lmodal.querySelector('.delete').click();
+    register.click();
+});
 export { app, db, auth, validateAuthToken };

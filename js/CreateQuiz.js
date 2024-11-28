@@ -100,20 +100,54 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             // Get the base path of the current page dynamically
             const basePath = window.location.pathname.split('/').slice(0, -1).join('/');
+            const quizLink = `${window.location.origin}${basePath}/Quiz.html#${quiz.quizId}`;
 
             row.innerHTML = `
-    <td>${quiz.quizName}</td>
-    <td><a href="${window.location.origin}${basePath}/Quiz.html#${quiz.quizId}" target="_blank">${window.location.origin}${basePath}/Quiz.html#${quiz.quizId}</a></td>
-    <td class="buttons">
-        <button class="button is-danger is-small delquiz" data-id="${quiz.id}">Delete</button>
-        <button class="button is-primary is-small"><a class="has-text-black" href="${window.location.origin}${basePath}/Result.html#${quiz.quizId}#${quiz.quizName}" target="_blank">View Results</a></button>
-    </td>
-`;
-
-
+                <td>${quiz.quizName}</td>
+                <td>
+                    <a href="${quizLink}" target="_blank">${quizLink}</a>
+                    <button class="button is-small ml-3 share-btn" data-link="${quizLink}">Share</button>
+                </td>
+                <td class="buttons">
+                    <button class="button is-danger is-small delquiz" data-id="${quiz.id}">Delete</button>
+                    <button class="button is-primary is-small">
+                        <a class="has-text-black" href="${window.location.origin}${basePath}/Result.html#${quiz.quizId}#${quiz.quizName}" target="_blank">View Results</a>
+                    </button>
+                </td>
+            `;
 
             tbody.appendChild(row);
         });
+
+        // Add event listener for the Share button
+        document.addEventListener('click', async (event) => {
+            if (event.target.classList.contains('share-btn')) {
+                const link = event.target.getAttribute('data-link');
+
+                // Check if the Web Share API is available
+                if (navigator.share) {
+                    try {
+                        await navigator.share({
+                            title: 'Check out this quiz!',
+                            url: link,
+                        });
+                    } catch (error) {
+                        console.error('Error sharing link:', error);
+                        alert('Could not share the link. Please try again.');
+                    }
+                } else {
+                    // Fallback: Copy the link to the clipboard
+                    try {
+                        await navigator.clipboard.writeText(link);
+                    } catch (error) {
+                        console.error('Error copying link to clipboard:', error);
+                    }
+                }
+            }
+        });
+
+        document.querySelector('.loader').classList.add('is-hidden');
+
 
         // Add delete functionality
         document.querySelectorAll('.delquiz').forEach((button) => {

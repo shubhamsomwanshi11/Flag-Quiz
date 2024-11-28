@@ -66,12 +66,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <td>${data.userName || 'N/A'}</td>
                 <td>${data.userEmail || 'N/A'}</td>
                 <td>${data.timestamp ? new Date(data.timestamp.seconds * 1000).toLocaleString() : 'N/A'}</td>
-                <td>${data.timeTaken ? data.timeTaken + ' Minutes' : 'N/A'}</td>
+                <td>${data.timeTaken ? data.timeTaken : 'N/A'}</td>
                 <td>${data.score ? data.score + ' / 100' : 'N/A'}</td>
             `;
 
             tbody.appendChild(row);
         });
+        document.querySelector('.loader').classList.add('is-hidden');
 
     } catch (error) {
         console.error("Error fetching results:", error);
